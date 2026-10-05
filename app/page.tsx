@@ -1,5 +1,5 @@
 import { site } from "@/lib/site";
-import { services, faqs, gallery, processSteps, marqueeItems } from "@/lib/data";
+import { services, faqs, gallery, processSteps, marqueeItems, reviews } from "@/lib/data";
 import { Reveal } from "@/components/reveal";
 import { Magnetic } from "@/components/magnetic";
 import { CtaButton } from "@/components/cta-button";
@@ -14,6 +14,7 @@ import { LineReveal } from "@/components/line-reveal";
 import { TiltImage } from "@/components/tilt-image";
 import { ParallaxBanner } from "@/components/parallax-banner";
 import { CompareSlider } from "@/components/compare-slider";
+import { ReviewsMarquee } from "@/components/reviews-marquee";
 
 export default function HomePage() {
   return (
@@ -247,6 +248,61 @@ export default function HomePage() {
         src="/images/stock-drywall-install.jpg"
         alt="Plasterer applying compound to a wall during a renovation"
       />
+
+      {/* ---------- REVIEWS ---------- */}
+      <section id="reviews" className="scroll-mt-24 border-t border-paper/10">
+        <div className="mx-auto max-w-7xl px-6 pt-24 lg:px-8 lg:pt-32">
+          <Reveal>
+            <SectionHeading
+              label="Word of mouth"
+              title="What customers say"
+            />
+          </Reveal>
+        </div>
+        <div className="mt-14">
+          {reviews.length > 0 ? (
+            <ReviewsMarquee reviews={reviews} />
+          ) : (
+            <Reveal>
+              <div className="mx-auto max-w-3xl px-6">
+                <div className="beam-border rounded-2xl border border-paper/10 bg-coal p-8 text-center sm:p-10">
+                  <div className="mx-auto flex w-fit items-center gap-1.5" aria-label="Five stars">
+                    {Array.from({ length: 5 }).map((_, s) => (
+                      <svg key={s} viewBox="0 0 20 20" className="h-5 w-5 fill-paper/85">
+                        <path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9L10 1.5z" />
+                      </svg>
+                    ))}
+                  </div>
+                  <p className="mt-5 font-display text-xl font-black uppercase tracking-tight text-paper sm:text-2xl">
+                    The finish is the proof.
+                  </p>
+                  <p className="mx-auto mt-4 max-w-md text-sm leading-relaxed text-paper/55">
+                    We&rsquo;re a young Brisbane business and our reputation is
+                    being built one job at a time. If we&rsquo;ve finished work
+                    for you, a Google review goes a long way — and it&rsquo;s
+                    the best way to help the next customer.
+                  </p>
+                  <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
+                    <a
+                      href={site.smsHref}
+                      className="inline-flex items-center gap-2 rounded-full bg-paper px-6 py-3 font-display text-xs font-bold uppercase tracking-[0.16em] text-ink transition-transform hover:scale-105"
+                    >
+                      <svg viewBox="0 0 16 16" className="h-3.5 w-3.5" aria-hidden>
+                        <path
+                          d="M3 2h3l1.5 3.5L6 7c.8 1.6 1.4 2.2 3 3l1.5-1.5L14 10v3H11C6.5 13 3 9.5 3 5V2Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                      Text us your feedback
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </Reveal>
+          )}
+        </div>
+        <div className="mx-auto max-w-7xl px-6 pb-24 lg:px-8 lg:pb-32" />
+      </section>
 
       {/* ---------- PROCESS ---------- */}
       <section id="process" className="scroll-mt-24 border-t border-paper/10 bg-coal">

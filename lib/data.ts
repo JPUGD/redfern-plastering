@@ -189,22 +189,10 @@ export const gallery: GalleryItem[] = [
     tag: "Finishing",
   },
   {
-    src: "/images/stock-putty-ladder.jpg",
-    alt: "Tradesman with a trowel and ladder repairing an interior wall",
-    caption: "Repair work at height — patch prepped, feathered and ready for paint.",
-    tag: "Repairs",
-  },
-  {
     src: "/images/stock-power-sander.jpg",
     alt: "Close-up of a wall being power-sanded under bright light",
     caption: "Machine sanding under raking light — the last pass before primer.",
     tag: "Finishing",
-  },
-  {
-    src: "/images/stock-sanding-mask.jpg",
-    alt: "Worker in safety gear smoothing an interior wall",
-    caption: "Surface prep done properly — contained, protected and dust-managed.",
-    tag: "Repairs",
   },
   {
     src: "/images/stock-stilts-worker.jpg",
@@ -217,12 +205,6 @@ export const gallery: GalleryItem[] = [
     alt: "Close-up of a trowel loaded with compound",
     caption: "Loaded and ready — the right amount, every pass.",
     tag: "Finishing",
-  },
-  {
-    src: "/images/stock-reno-room.jpg",
-    alt: "Bright room mid-renovation with materials staged",
-    caption: "Mid-renovation — linings staged, site kept tidy as we go.",
-    tag: "Renovations",
   },
 ];
 
@@ -265,3 +247,18 @@ export const marqueeItems = [
   "Commercial fit-outs",
   "Insurance repairs",
 ];
+
+export type Review = {
+  name: string;
+  date: string;
+  text: string;
+  rating: number;
+};
+
+/**
+ * REAL Google reviews only. Empty until Tim's GBP reviews are
+ * confirmed — populate from the Google Business Profile, never
+ * from a similarly-named business. Reviews render the moment
+ * entries are added here.
+ */
+export const reviews: Review[] = [];

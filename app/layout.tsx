@@ -7,6 +7,7 @@ import { Footer } from "@/components/footer";
 import { ScrollProgress } from "@/components/scroll-progress";
 import { GrainOverlay } from "@/components/grain-overlay";
 import { FloatingCall } from "@/components/floating-call";
+import { Analytics } from "@vercel/analytics/react";
 
 const archivo = Archivo({
   subsets: ["latin"],
@@ -101,6 +102,7 @@ export default function RootLayout({
         <FloatingCall />
         <main>{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

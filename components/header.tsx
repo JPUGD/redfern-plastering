@@ -7,9 +7,9 @@ import { site } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 const links = [
-  { href: "/#services", label: "Services" },
+  { href: "/services", label: "Services" },
   { href: "/#work", label: "Work" },
-  { href: "/#process", label: "Process" },
+  { href: "/plastering-costs-brisbane", label: "Costs" },
   { href: "/#faq", label: "FAQ" },
   { href: "/#contact", label: "Contact" },
 ];

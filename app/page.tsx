@@ -15,6 +15,16 @@ import { TiltImage } from "@/components/tilt-image";
 import { ParallaxBanner } from "@/components/parallax-banner";
 import { CompareSlider } from "@/components/compare-slider";
 import { ReviewsMarquee } from "@/components/reviews-marquee";
+import Link from "next/link";
+
+const SERVICE_PAGE_MAP: Record<string, string> = {
+  "repairs-patching": "/services/plaster-repairs",
+  renovations: "/services/renovation-plastering",
+  "ceiling-repairs": "/services/ceiling-repairs",
+  "water-damage": "/services/water-damage-plaster-repairs",
+  "plasterboard-fitouts": "/services/plasterboard-installation",
+  commercial: "/services/commercial-plastering",
+};
 
 export default function HomePage() {
   return (
@@ -77,9 +87,9 @@ export default function HomePage() {
                 </div>
               </Reveal>
 
-              <Reveal delay={0.32}>
+              <Reveal delay={0.58}>
                 <p className="mt-10 text-[11px] font-semibold uppercase tracking-[0.26em] text-paper/35">
-                  ABN {site.abn} · Fully insured workmanship
+                  ABN {site.abn} · Brisbane · Logan · Ipswich · Redlands
                 </p>
               </Reveal>
             </div>
@@ -138,11 +148,42 @@ export default function HomePage() {
                         </li>
                       ))}
                     </ul>
+                    <Link
+                      href={SERVICE_PAGE_MAP[s.slug]}
+                      className="mt-5 inline-block pt-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-paper/40 transition-colors hover:text-paper"
+                    >
+                      Details &amp; pricing →
+                    </Link>
                   </div>
                 </SpotlightCard>
               </Reveal>
             ))}
           </div>
+
+          {/* areas strip */}
+          <Reveal delay={0.1}>
+            <div className="mt-10 flex flex-wrap items-center gap-2.5">
+              <span className="text-[11px] font-semibold uppercase tracking-[0.28em] text-paper/45">
+                Brisbane &amp; surrounds:
+              </span>
+              {[
+                ["South Brisbane", "/south-brisbane"],
+                ["North Brisbane", "/north-brisbane"],
+                ["East & Bayside", "/east-brisbane"],
+                ["Logan", "/logan"],
+                ["Ipswich", "/ipswich"],
+                ["Redlands", "/redlands"],
+              ].map(([label, href]) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="rounded-full border border-paper/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-paper/70 transition-colors hover:border-paper/50 hover:text-paper"
+                >
+                  {label}
+                </Link>
+              ))}
+            </div>
+          </Reveal>
         </div>
       </section>
 

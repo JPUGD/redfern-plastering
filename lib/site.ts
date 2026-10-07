@@ -5,6 +5,8 @@ export const site = {
   phoneDisplay: "0425 743 992",
   phoneHref: "tel:+61425743992",
   smsHref: "sms:+61425743992",
+  whatsappHref:
+    "https://wa.me/61425743992?text=Hi%20Redfern%2C%20I%27d%20like%20a%20quote%20for%20some%20plastering%20work.",
   abn: "61 947 738 353",
   city: "Brisbane",
   state: "QLD",

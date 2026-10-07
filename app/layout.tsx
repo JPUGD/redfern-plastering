@@ -45,6 +45,12 @@ export const metadata: Metadata = {
     url: site.url,
   },
   robots: { index: true, follow: true },
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    title: "Redfern Plastering",
+    statusBarStyle: "black-translucent",
+  },
 };
 
 export const viewport: Viewport = {

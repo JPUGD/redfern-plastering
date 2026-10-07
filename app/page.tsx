@@ -15,6 +15,7 @@ import { TiltImage } from "@/components/tilt-image";
 import { ParallaxBanner } from "@/components/parallax-banner";
 import { CompareSlider } from "@/components/compare-slider";
 import { ReviewsMarquee } from "@/components/reviews-marquee";
+import { WorkGallery } from "@/components/work-gallery";
 import Link from "next/link";
 
 const SERVICE_PAGE_MAP: Record<string, string> = {
@@ -266,17 +267,8 @@ export default function HomePage() {
             />
           </Reveal>
 
-          <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {gallery.map((g, i) => (
-              <Reveal key={g.src} delay={0.05 * (i % 3)}>
-                <TiltImage
-                  src={g.src}
-                  alt={g.alt}
-                  caption={g.caption}
-                  tag={g.tag}
-                />
-              </Reveal>
-            ))}
+          <div className="mt-14">
+            <WorkGallery items={gallery} />
           </div>
         </div>
       </section>
@@ -440,8 +432,13 @@ export default function HomePage() {
                       Send a text
                     </CtaButton>
                   </Magnetic>
+                  <Magnetic strength={0.2}>
+                    <CtaButton href={site.whatsappHref} external variant="beam">
+                      WhatsApp us
+                    </CtaButton>
+                  </Magnetic>
                   <p className="text-[11px] uppercase tracking-[0.24em] text-paper/35">
-                    Brisbane based · {site.abn ? `ABN ${site.abn}` : ""}
+                    Brisbane based · ABN {site.abn}
                   </p>
                 </div>
               </div>

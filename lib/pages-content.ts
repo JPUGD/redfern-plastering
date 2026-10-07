@@ -348,6 +348,60 @@ export const SERVICE_PAGES: Record<string, ServicePageContent> = {
       },
     ],
   },
+
+  "cornice-repairs": {
+    slug: "cornice-repairs",
+    key: "cornice-repairs",
+    name: "Cornice Repairs",
+    h1: "Cornice repairs — cracks, matching & re-runs",
+    metaTitle: "Cornice Repairs Brisbane — Cracks, Matching & Re-Runs | Redfern",
+    metaDescription:
+      "Cracked cornice re-set and re-run, period pattern matching, cornice for new re-sheets. Brisbane-wide, from single mitres to whole-room runs. Call 0425 743 992.",
+    intro:
+      "Cornice is the trim that catches every crack a house produces — mitred joints open with seasonal movement, ceilings drop a millimetre, and the line above your wall starts telling stories. We re-set damaged sections, re-run lengths after wall removals, and match patterns where they still exist.",
+    sections: [
+      {
+        heading: "Cornice work we do",
+        bullets: [
+          "Cracked and open mitres re-set — the joint, not just the crack",
+          "Damaged sections cut out and re-run to match",
+          "Cornice after wall removals and openings re-formed cleanly",
+          "New cornice in re-sheeted rooms — standard or profiled",
+          "Ceiling roses and feature mouldings re-set or replaced",
+          "Period pattern matching where the profile is still available",
+        ],
+      },
+      {
+        heading: "Why cornice cracks at the corners",
+        paragraphs: [
+          "The mitred joint is the weakest point in the run. Truss uplift and frame settling move the ceiling a millimetre or two with the seasons, and the joint opens instead of flexing — usually in the same corner, every year.",
+          "That's why filling a cornice crack and painting it rarely lasts. The proper fix is to re-set the joint: open it, re-bed the cornice, re-mitre and finish. A re-set corner moves with the house; a filled one tears through the paint next dry season.",
+        ],
+      },
+      {
+        heading: "Repair or replace — per metre thinking",
+        paragraphs: [
+          "A single cracked mitre or a damaged half-metre repairs economically. Long failing runs, water-stained cornice, or patterns discontinued decades ago usually come out cheaper re-run in full — new lengths, fresh mitres, one finish.",
+          "Indicative per-metre ranges are in our cost guide; ornate period profiles are quoted from photos because the pattern determines the work.",
+        ],
+        note: "If your cornice pattern is hard to match, text us a close-up photo of the profile — we can usually identify it on sight.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Can you match 1970s cornice patterns?",
+        a: "Most 70s and 80s cornice is still made — the common patterns never went away. Genuinely ornate period cornice is matched where the profile exists, and quoted from a close-up photo of the profile where it doesn't.",
+      },
+      {
+        q: "Why does the same corner crack every year?",
+        a: "Seasonal movement — truss uplift lifts the ceiling edge in dry weather and the mitre opens. Filling it is a cosmetic fix that reopens; re-setting the joint is the repair that holds.",
+      },
+      {
+        q: "Is it cheaper to replace cornice or repair it?",
+        a: "Short damaged sections repair cheaper. Long failing runs, stained cornice or discontinued profiles usually replace cheaper than fighting them — new lengths, fresh mitres, one clean finish.",
+      },
+    ],
+  },
 };
 
 /* ------------------------------------------------------------------ */

@@ -76,13 +76,13 @@ export const SERVICE_PAGES: Record<string, ServicePageContent> = {
           "Coats required and site access",
           "Paint — usually by your painter, or we can discuss it",
         ],
-        note: "Indicative price ranges are on our Brisbane plastering cost guide — text photos of the damage for a firmer number faster.",
+        note: "Every job gets a firm written price — text photos of the damage and small repairs are usually quoted the same day.",
       },
     ],
     faqs: [
       {
         q: "How much does it cost to patch a hole in a plaster wall?",
-        a: "Small single patches are among our most common jobs. See the indicative ranges on our cost guide — and photos of the damage from two or three angles will get you a firmer price faster than a phone description.",
+        a: "Small single patches are among our most common jobs, quoted in writing before we start. Photos of the damage from two or three angles will get you a firm price faster than a phone description.",
       },
       {
         q: "Why does the same crack keep coming back?",
@@ -134,7 +134,7 @@ export const SERVICE_PAGES: Record<string, ServicePageContent> = {
     faqs: [
       {
         q: "How much does a ceiling repair cost in Brisbane?",
-        a: "It depends mostly on size, height, access and whether it's a patch or a full sheet. Our cost guide has indicative ranges for cut-out reinstatement, sheet replacement and full ceiling re-plaster.",
+        a: "It depends mostly on size, height, access and whether it's a patch or a full sheet — every job is quoted in writing before work starts. Photos of the ceiling from below (and the roof space above, if there's been a leak) get you a firm price fastest.",
       },
       {
         q: "Can you repair a ceiling without repainting the whole ceiling?",
@@ -382,7 +382,7 @@ export const SERVICE_PAGES: Record<string, ServicePageContent> = {
         heading: "Repair or replace — per metre thinking",
         paragraphs: [
           "A single cracked mitre or a damaged half-metre repairs economically. Long failing runs, water-stained cornice, or patterns discontinued decades ago usually come out cheaper re-run in full — new lengths, fresh mitres, one finish.",
-          "Indicative per-metre ranges are in our cost guide; ornate period profiles are quoted from photos because the pattern determines the work.",
+          "Every job is quoted in writing before work starts; ornate period profiles are quoted from photos because the pattern determines the work.",
         ],
         note: "If your cornice pattern is hard to match, text us a close-up photo of the profile — we can usually identify it on sight.",
       },
@@ -612,53 +612,14 @@ export type CostRow = {
   notes?: string;
 };
 
-export const COST_ROWS: CostRow[] = [
-  {
-    job: "Small wall patch (hole to fist size)",
-    range: "$100 – $300",
-    notes: "Single visit, patched and feathered; paint by your painter.",
-  },
-  {
-    job: "Larger wall repair (sheet section)",
-    range: "$250 – $550",
-    notes: "Damaged section cut back to joists or studs, new board set in.",
-  },
-  {
-    job: "Ceiling access cut-out reinstated",
-    range: "$250 – $600",
-    notes: "Depends on height, lighting type and whether insulation needs resetting.",
-  },
-  {
-    job: "Ceiling sheet replacement (per sheet)",
-    range: "$300 – $550",
-    notes: "Includes set, tape, coats and sand; paint separate.",
-  },
-  {
-    job: "Water-damage ceiling re-line (1–2 sheets)",
-    range: "$450 – $1,000",
-    notes: "After the leak is fixed; includes stain-blocking and moisture check.",
-  },
-  {
-    job: "Re-plaster a standard bedroom ceiling",
-    range: "$1,200 – $2,200",
-    notes: "Full replacement incl. cornice butt-joins and finish.",
-  },
-  {
-    job: "Standard cornice repair / re-run",
-    range: "$25 – $60 per metre",
-    notes: "Ornate or period profiles quoted from photos.",
-  },
-  {
-    job: "Full-room re-sheet (walls, standard bedroom)",
-    range: "$1,600 – $2,800",
-    notes: "Level 4 finish; ceiling and cornice quoted separately.",
-  },
-];
+// NOTE: COST_ROWS removed 2026-10-12 at the owner's request — no public
+// price table. Quotes are given in writing per job. Do not republish
+// price ranges without Tim's approval.
 
 export const COST_FAQS: Faq[] = [
   {
-    q: "Are these the prices I'll actually pay?",
-    a: "They're indicative ranges for typical Brisbane residential work in 2026 — a planning tool, not a quote. Board prices, access and coat counts move every job. You get a firm written price before any work starts.",
+    q: "How much do you charge?",
+    a: "Every job is quoted in writing before work starts — there's no flat rate, because a small patch and a full re-sheet are different jobs. Small repairs are usually priced the same day from photos: text images of the damage and you'll get a firm price back.",
   },
   {
     q: "Is it cheaper to patch or replace a ceiling sheet?",

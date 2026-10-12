@@ -2,11 +2,13 @@ import type { Metadata, Viewport } from "next";
 import { Archivo, Inter } from "next/font/google";
 import "./globals.css";
 import { site } from "@/lib/site";
+import { reviews } from "@/lib/data";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { ScrollProgress } from "@/components/scroll-progress";
 import { GrainOverlay } from "@/components/grain-overlay";
 import { FloatingCall } from "@/components/floating-call";
+import { MotionProvider } from "@/components/motion-provider";
 import { Analytics } from "@vercel/analytics/react";
 
 const archivo = Archivo({
@@ -90,6 +92,19 @@ const jsonLd = {
     name: "ABN",
     value: site.abn,
   },
+  ...(reviews.length > 0
+    ? {
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: (
+            reviews.reduce((a, r) => a + r.rating, 0) / reviews.length
+          ).toFixed(1),
+          reviewCount: reviews.length,
+          bestRating: 5,
+          worstRating: 1,
+        },
+      }
+    : {}),
 };
 
 export default function RootLayout({
@@ -102,12 +117,14 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <Header />
-        <ScrollProgress />
-        <GrainOverlay />
-        <FloatingCall />
-        <main>{children}</main>
-        <Footer />
+        <MotionProvider>
+          <Header />
+          <ScrollProgress />
+          <GrainOverlay />
+          <FloatingCall />
+          <main>{children}</main>
+          <Footer />
+        </MotionProvider>
         <Analytics />
       </body>
     </html>

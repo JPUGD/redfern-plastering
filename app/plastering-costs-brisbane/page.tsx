@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
-import { COST_ROWS, COST_FAQS } from "@/lib/pages-content";
+import { COST_FAQS } from "@/lib/pages-content";
 import { SERVICE_PAGES, AREA_PAGES } from "@/lib/pages-content";
 import { Reveal } from "@/components/reveal";
 import { Magnetic } from "@/components/magnetic";
 import { CtaButton } from "@/components/cta-button";
 import { SectionHeading } from "@/components/section-heading";
 import { Accordion } from "@/components/accordion";
+import { TiltImage } from "@/components/tilt-image";
 import { breadcrumbJsonLd, faqJsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: { absolute: "How Much Does Plastering Cost in Brisbane? | Redfern" },
   description:
-    "Brisbane plastering prices 2026: wall patches $100–$300, ceiling cut-outs $250–$600, re-sheets $1,600–$2,800. What moves the price, and how to compare quotes.",
+    "What shapes a Brisbane plastering quote: job size, coats, ceiling height, access, texture matching. How we price, and how to compare quotes properly.",
   alternates: { canonical: "/plastering-costs-brisbane" },
   openGraph: { title: "How Much Does Plastering Cost in Brisbane? | Redfern", url: "/plastering-costs-brisbane" },
 };
@@ -59,7 +60,7 @@ export default function CostGuidePage() {
         <Reveal>
           <p className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.32em] text-paper/50">
             <span className="h-px w-8 bg-paper/30" aria-hidden />
-            Brisbane · 2026 indicative prices
+            Brisbane · How we price
           </p>
         </Reveal>
         <Reveal delay={0.06}>
@@ -70,12 +71,15 @@ export default function CostGuidePage() {
         {/* AEO direct-answer block */}
         <Reveal delay={0.12}>
           <p className="mt-8 max-w-3xl text-base leading-relaxed text-paper/65 sm:text-lg">
-            Most small plaster repairs in Brisbane cost between <strong>$100 and $550</strong>:
-            wall patches $100–$300, ceiling access cut-outs $250–$600, and a
-            single ceiling-sheet replacement $300–$550. Larger jobs scale by
-            area and coats — a full bedroom re-sheet runs $1,600–$2,800 with a
-            Level 4 finish. These are 2026 indicative ranges, not quotes; text
-            photos of your job for a firm written price.
+            There&rsquo;s no single plastering rate — a fair quote reflects the
+            job, not a flat hourly number. What moves it: <strong>job size</strong>{" "}
+            (a door-handle punch and a full re-sheet are different animals),{" "}
+            <strong>coats</strong> (three is the trade standard for a finish that
+            lasts), <strong>ceiling height and access</strong>,{" "}
+            <strong>texture matching</strong>, and whether the surface ends{" "}
+            <strong>paint-ready</strong>. Every job gets a firm written quote
+            before work starts — text photos of the damage and you&rsquo;ll have
+            a price the same day.
           </p>
         </Reveal>
         <Reveal delay={0.18}>
@@ -89,58 +93,49 @@ export default function CostGuidePage() {
         </Reveal>
       </section>
 
-      {/* price table */}
+      {/* price table replaced by real-job photo strip */}
       <section className="mx-auto max-w-7xl px-6 pb-16 lg:px-8">
         <Reveal>
           <SectionHeading
-            label="Indicative prices"
-            title="Brisbane plastering price ranges"
+            label="Where the work goes"
+            title="What your money buys"
+            intro="No public price list — every job is quoted on its own surface. But every quote covers the same craft: taped joints, flat coats, and a finish that disappears under paint. This is what that looks like on site."
           />
         </Reveal>
-        <Reveal delay={0.08}>
-          <div className="mt-10 overflow-hidden rounded-2xl border border-paper/10">
-            <table className="w-full text-left">
-              <thead>
-                <tr className="border-b border-paper/10 bg-coal">
-                  <th className="p-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-paper/50 sm:p-5">
-                    Job
-                  </th>
-                  <th className="p-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-paper/50 sm:p-5">
-                    Indicative range
-                  </th>
-                  <th className="hidden p-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-paper/50 sm:table-cell sm:p-5">
-                    Notes
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {COST_ROWS.map((r) => (
-                  <tr
-                    key={r.job}
-                    className="border-b border-paper/5 transition-colors last:border-0 hover:bg-coal/60"
-                  >
-                    <td className="p-4 text-sm font-medium text-paper/85 sm:p-5">
-                      {r.job}
-                    </td>
-                    <td className="p-4 font-display text-sm font-bold text-paper sm:p-5">
-                      {r.range}
-                    </td>
-                    <td className="hidden p-4 text-xs leading-relaxed text-paper/45 sm:table-cell sm:p-5">
-                      {r.notes}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </Reveal>
-        <Reveal delay={0.12}>
-          <p className="mt-5 text-xs leading-relaxed text-paper/40">
-            Ranges reflect typical Brisbane residential work in 2026. Your
-            written quote is the number that matters — board prices, access and
-            coat counts move every job.
-          </p>
-        </Reveal>
+        <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2">
+          <Reveal>
+            <TiltImage
+              src="/images/work-tape-corner.jpg"
+              alt="Redfern plasterer in branded polo taping the wall-to-ceiling junction during a Brisbane renovation"
+              caption="Taping the wall-to-ceiling junction — the joint everyone sees first."
+              tag="On site"
+            />
+          </Reveal>
+          <Reveal delay={0.06}>
+            <TiltImage
+              src="/images/work-branded-ladder.jpg"
+              alt="Plasterer on a platform ladder applying compound to a ceiling join, Redfern branded shirt visible"
+              caption="Overhead work off the platform — coats built up, then checked against raking light."
+              tag="On site"
+            />
+          </Reveal>
+          <Reveal delay={0.12}>
+            <TiltImage
+              src="/images/work-vaulted-taping.jpg"
+              alt="Compound coats mid-process on a raked ceiling with bulkheads and soffits"
+              caption="A raked ceiling with bulkheads — more angles, more joints, more passes."
+              tag="On site"
+            />
+          </Reveal>
+          <Reveal delay={0.18}>
+            <TiltImage
+              src="/images/work-led-sander.jpg"
+              alt="Power sander with LED ring light and dust extraction smoothing a wall before paint"
+              caption="Machine sanding with dust extraction — the LED ring shows up every ridge."
+              tag="Finishing"
+            />
+          </Reveal>
+        </div>
       </section>
 
       {/* what moves the price */}

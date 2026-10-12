@@ -28,7 +28,7 @@ export function ReviewsMarquee({ reviews }: { reviews: Review[] }) {
   const row = [...reviews, ...reviews];
 
   return (
-    <div className="relative overflow-hidden">
+    <div className="group relative overflow-hidden">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-ink to-transparent"
@@ -40,7 +40,7 @@ export function ReviewsMarquee({ reviews }: { reviews: Review[] }) {
       <div
         className={cn(
           "flex w-max items-stretch gap-5 py-2 pr-5",
-          enabled && "animate-marquee"
+          enabled && "animate-marquee group-hover:[animation-play-state:paused]"
         )}
         style={enabled ? undefined : { animation: "none" }}
       >

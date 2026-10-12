@@ -153,7 +153,7 @@ export default function HomePage() {
                       href={SERVICE_PAGE_MAP[s.slug]}
                       className="mt-5 inline-block pt-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-paper/40 transition-colors hover:text-paper"
                     >
-                      Details &amp; pricing →
+                      Details &amp; FAQs →
                     </Link>
                   </div>
                 </SpotlightCard>
@@ -334,7 +334,14 @@ export default function HomePage() {
             </Reveal>
           )}
         </div>
-        <div className="mx-auto max-w-7xl px-6 pb-24 lg:px-8 lg:pb-32" />
+        <div className="mx-auto max-w-7xl px-6 pb-24 lg:px-8 lg:pb-32">
+          <Reveal delay={0.12}>
+            <p className="text-center text-xs leading-relaxed text-paper/40">
+              Reviews from our Google Business Profile — left by real
+              Brisbane customers after real jobs.
+            </p>
+          </Reveal>
+        </div>
       </section>
 
       {/* ---------- PROCESS ---------- */}

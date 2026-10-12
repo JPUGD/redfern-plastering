@@ -132,7 +132,7 @@ export function CompareSlider({
 
       {/* hint */}
       <div className="pointer-events-none absolute bottom-4 left-1/2 z-10 -translate-x-1/2 rounded-full bg-ink/75 px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-paper/75 opacity-100 backdrop-blur transition-opacity duration-500 group-hover:opacity-0">
-        Drag the handle
+        Drag or arrow keys
       </div>
     </div>
   );

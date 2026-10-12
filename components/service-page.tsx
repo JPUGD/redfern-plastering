@@ -108,15 +108,14 @@ export function ServicePage({ page }: { page: ServicePageContent }) {
                 {page.intro}
               </p>
               <p className="mt-5 border-t border-paper/10 pt-5 text-xs leading-relaxed text-paper/50">
-                Serving Brisbane, Logan, Ipswich and the Redlands. Indicative
-                prices on our{" "}
+                Serving Brisbane, Logan, Ipswich and the Redlands — see{" "}
                 <Link
                   href="/plastering-costs-brisbane"
                   className="underline decoration-paper/40 underline-offset-4 transition-colors hover:text-paper"
                 >
-                  Brisbane plastering cost guide
-                </Link>
-                .
+                  how we price
+                </Link>{" "}
+                and what every quote includes.
               </p>
             </aside>
           </Reveal>
@@ -245,7 +244,7 @@ export function ServicePage({ page }: { page: ServicePageContent }) {
                 Brisbane cost guide
               </p>
               <p className="mt-2 text-xs leading-relaxed text-paper/45">
-                Indicative prices for patches, ceilings, re-sheets and cornice.
+                How we price: job size, coats, access — and what every quote includes.
               </p>
             </Link>
           </div>

@@ -170,6 +170,30 @@ export const gallery: GalleryItem[] = [
     own: true,
   },
   {
+    src: "/images/work-tape-corner.jpg",
+    alt: "Redfern plasterer in branded polo taping the wall-to-ceiling junction during a renovation",
+    caption:
+      "On the tools — taping the wall-to-ceiling junction, the joint everyone sees first.",
+    tag: "Our work",
+    own: true,
+  },
+  {
+    src: "/images/work-branded-ladder.jpg",
+    alt: "Plasterer on a platform ladder applying compound to a ceiling join in a Redfern branded shirt",
+    caption:
+      "Overhead coats built up off the platform, every pass checked against raking light.",
+    tag: "Our work",
+    own: true,
+  },
+  {
+    src: "/images/work-tape-feather.jpg",
+    alt: "Joint compound feathered out across a complex ceiling with soffits and angles",
+    caption:
+      "Feathered wide — compound worked out past the joint so the repair disappears.",
+    tag: "Our work",
+    own: true,
+  },
+  {
     src: "/images/work-resheet.jpg",
     alt: "Room with fresh plasterboard being mudded and taped across the ceiling",
     caption: "Full re-sheet in progress — mudding and taping across the ceiling plane.",
@@ -256,9 +280,46 @@ export type Review = {
 };
 
 /**
- * REAL Google reviews only. Empty until Tim's GBP reviews are
- * confirmed — populate from the Google Business Profile, never
- * from a similarly-named business. Reviews render the moment
- * entries are added here.
+ * REAL Google reviews only — these are Tim's verified GBP reviews
+ * (pasted from the Google Business Profile 2026-10-12). Star ratings
+ * confirmed 5/5 on GBP; re-sync when new reviews land. Dates
+ * approximated from the "N months ago" shown on GBP.
  */
-export const reviews: Review[] = [];
+export const reviews: Review[] = [
+  {
+    name: "Joe P.",
+    date: "2026",
+    text: "Tim did an awesome job on our bathroom. He looked after us on price, the finish was spot on, and the quality was genuinely impressive. Easy to deal with and highly recommend.",
+    rating: 5,
+  },
+  {
+    name: "Daniel L.",
+    date: "Jul 2026",
+    text: "RPS did an excellent job on my home renovation. Quality of the finish was excellent, communication was quick and easy and everything was clean and tidy.",
+    rating: 5,
+  },
+  {
+    name: "Geoff M.",
+    date: "Sep 2026",
+    text: "Tim repaired walls after relocation of electrical fittings and renovations to our home. The end result was very pleasing. He was easy to communicate with and solved tricky issues without any fuss. He arrived on time and left the house neat and tidy.",
+    rating: 5,
+  },
+  {
+    name: "Michael D.",
+    date: "Aug 2026",
+    text: "Tim from Redfern Plastering Solutions did an outstanding job on our project. From the first point of contact, he was professional, reliable, and easy to communicate with. The quality of his workmanship is excellent — everything was finished to a very high standard with great attention to detail. He arrived on time, kept the workspace clean, and completed the job exactly as promised. I wouldn't hesitate to recommend Tim to anyone looking for a skilled and trustworthy plasterer.",
+    rating: 5,
+  },
+  {
+    name: "Karen E.",
+    date: "Aug 2026",
+    text: "Tim has just completed a ceiling repair for our home as we prepare for sale. This is the second time we have engaged Tim as his workmanship is always outstanding. Add this to his excellent communication skills, professionalism, very competitive rates and timely manner — we would highly recommend his business for any job big or small. Thank you Tim.",
+    rating: 5,
+  },
+  {
+    name: "Derek S.",
+    date: "Aug 2026",
+    text: "I couldn't be happier with the work Tim from Redfern Solutions completed on our bathroom renovation. His workmanship was outstanding, and the quality of the finish exceeded my expectations. The job was also very well priced, offering excellent value for money. Communication was clear and prompt, he arrived exactly when he said he would, and he was friendly, polite, and professional throughout the entire process. I highly recommend Tim to anyone looking for quality workmanship and reliable service. His work is 5 star!",
+    rating: 5,
+  },
+];

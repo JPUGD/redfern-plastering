@@ -108,6 +108,12 @@ body {
   -webkit-text-stroke: 1px rgba(246, 245, 241, 0.16);
 }
 
+/* keyboard users get a clear, on-brand focus ring */
+:focus-visible {
+  outline: 2px solid var(--color-paper);
+  outline-offset: 3px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

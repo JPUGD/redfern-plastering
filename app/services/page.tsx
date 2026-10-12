@@ -32,7 +32,7 @@ export default function ServicesIndex() {
             as="h1"
             label="What we do"
             title="Plastering services"
-            intro="All aspects of plastering — residential and commercial, repairs through renovations. Click through for detail, indicative pricing and FAQs on each."
+            intro="All aspects of plastering — residential and commercial, repairs through renovations. Click through for detail, FAQs and how pricing works on each."
           />
         </Reveal>
         <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">

@@ -134,7 +134,7 @@ export function AreaPage({ page }: { page: AreaPageContent }) {
               </p>
               <p className="mt-4 text-sm leading-relaxed text-paper/60">
                 Every job starts with a written price — and small repairs are
-                usually quoted the same day from photos. Indicative pricing is
+                usually quoted the same day from photos. How pricing works is
                 on our{" "}
                 <Link
                   href="/plastering-costs-brisbane"

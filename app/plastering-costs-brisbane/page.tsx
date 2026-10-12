@@ -11,10 +11,11 @@ import { Accordion } from "@/components/accordion";
 import { breadcrumbJsonLd, faqJsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "How Much Does Plastering Cost in Brisbane? (2026 Guide) | Redfern",
+  title: { absolute: "How Much Does Plastering Cost in Brisbane? 2026 Prices | Redfern" },
   description:
-    "Indicative Brisbane plastering prices: wall patches, ceiling repairs, water damage re-lines, cornice, full-room re-sheets. What moves the price, and how to compare quotes.",
+    "Brisbane plastering prices 2026: wall patches $100–$300, ceiling cut-outs $250–$600, re-sheets $1,600–$2,800. What moves the price, and how to compare quotes.",
   alternates: { canonical: "/plastering-costs-brisbane" },
+  openGraph: { title: "How Much Does Plastering Cost in Brisbane? | Redfern", url: "/plastering-costs-brisbane" },
 };
 
 const jsonLds = [
@@ -223,6 +224,12 @@ export default function CostGuidePage() {
                 {s.name}
               </Link>
             ))}
+            <Link
+              href="/diy-plaster-repairs"
+              className="rounded-full border border-paper/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-paper/70 transition-colors hover:border-paper/50 hover:text-paper"
+            >
+              DIY guide
+            </Link>
             {areas.map((a) => (
               <Link
                 key={a.slug}

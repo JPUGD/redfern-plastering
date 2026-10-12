@@ -1,7 +1,7 @@
 import type { Faq } from "@/lib/data";
 
 export const DIY_GUIDE = {
-  metaTitle: "DIY Plaster Repairs — When to Fix It Yourself | Redfern Brisbane",
+  metaTitle: "DIY Plaster Repairs — When to Fix It Yourself | Redfern",
   metaDescription:
     "Nail holes and hairline cracks you can patch yourself. Ceilings, returning cracks, texture and water damage you can't. An honest guide from a Brisbane plasterer.",
   h1: "DIY plaster repairs: when to fix it yourself",

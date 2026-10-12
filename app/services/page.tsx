@@ -6,10 +6,11 @@ import { SectionHeading } from "@/components/section-heading";
 import { breadcrumbJsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Plastering Services Brisbane — Repairs, Ceilings, Renovations | Redfern",
+  title: { absolute: "Plastering Services Brisbane — Repairs, Ceilings & Renovations | Redfern" },
   description:
-    "All aspects of plastering across Brisbane: repairs and patching, ceiling repairs, renovation re-sheets, water damage, new plasterboard and commercial work. Call 0425 743 992.",
+    "All aspects of plastering across Brisbane: repairs, ceilings, renovations, water damage, cornice and commercial work. Indicative prices on every page. Call 0425 743 992.",
   alternates: { canonical: "/services" },
+  openGraph: { title: "Plastering Services Brisbane | Redfern", url: "/services" },
 };
 
 const jsonLd = breadcrumbJsonLd([
@@ -28,6 +29,7 @@ export default function ServicesIndex() {
       <section className="mx-auto max-w-7xl px-6 pb-16 pt-36 lg:px-8">
         <Reveal>
           <SectionHeading
+            as="h1"
             label="What we do"
             title="Plastering services"
             intro="All aspects of plastering — residential and commercial, repairs through renovations. Click through for detail, indicative pricing and FAQs on each."

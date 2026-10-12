@@ -154,7 +154,7 @@ export const SERVICE_PAGES: Record<string, ServicePageContent> = {
     h1: "Renovation plastering — rooms brought back to square",
     metaTitle: "Renovation Plastering Brisbane — Full Rooms & Homes | Redfern",
     metaDescription:
-      "Full-room re-sheets, kitchen and bathroom strip-outs, square-set or cornice finishes — renovation plastering that works in with your other trades. Call 0425 743 992.",
+      "Full-room re-sheets, kitchen and bathroom strip-outs, square-set or cornice finishes — reno plastering that works in with your trades. Call 0425 743 992.",
     intro:
       "Residential renovations are our specialty. We strip out, re-sheet and finish to a paint-ready standard — and we work in with your chippy, sparky and painter so nobody's waiting on anybody.",
     sections: [
@@ -449,7 +449,7 @@ export const AREA_PAGES: Record<string, AreaPageContent> = {
     h1: "Plasterer in North Brisbane",
     metaTitle: "Plasterer North Brisbane — Repairs & Renovations | Redfern",
     metaDescription:
-      "Plaster repairs, ceiling repairs and renovation linings across Brisbane's north — Chermside, Aspley, North Lakes, Bracken Ridge and surrounds. Call 0425 743 992.",
+      "Plaster repairs, ceilings and renovation linings across Brisbane's north — Chermside, Aspley, North Lakes, Bracken Ridge. Call 0425 743 992.",
     intro:
       "The northside mixes 50s and 60s post-war homes with the big growth estates that spread out from the 90s onward. The older pockets are at the age where ceilings need help; the newer estates are building extensions and garage conversions.",
     suburbs: [

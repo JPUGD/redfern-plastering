@@ -5,9 +5,10 @@ import { ServicePage } from "@/components/service-page";
 const page = SERVICE_PAGES["plasterboard-installation"];
 
 export const metadata: Metadata = {
-  title: page.metaTitle,
+  title: { absolute: page.metaTitle },
   description: page.metaDescription,
   alternates: { canonical: `/services/${page.slug}` },
+  openGraph: { title: page.metaTitle, url: `/services/${page.slug}` },
 };
 
 export default function Page() {

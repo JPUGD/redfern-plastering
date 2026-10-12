@@ -227,6 +227,17 @@ export function ServicePage({ page }: { page: ServicePageContent }) {
               </Link>
             ))}
             <Link
+              href="/diy-plaster-repairs"
+              className="group rounded-2xl border border-paper/10 bg-coal/50 p-5 transition-colors hover:border-paper/30"
+            >
+              <p className="font-display text-sm font-bold uppercase tracking-[0.12em] text-paper/85 transition-colors group-hover:text-paper">
+                DIY repairs guide
+              </p>
+              <p className="mt-2 text-xs leading-relaxed text-paper/45">
+                When to fix it yourself — and when to call us.
+              </p>
+            </Link>
+            <Link
               href="/plastering-costs-brisbane"
               className="group rounded-2xl border border-paper/10 bg-coal/50 p-5 transition-colors hover:border-paper/30"
             >

@@ -5,9 +5,10 @@ import { AreaPage } from "@/components/area-page";
 const page = AREA_PAGES["redlands"];
 
 export const metadata: Metadata = {
-  title: page.metaTitle,
+  title: { absolute: page.metaTitle },
   description: page.metaDescription,
   alternates: { canonical: `/${page.slug}` },
+  openGraph: { title: page.metaTitle, url: `/${page.slug}` },
 };
 
 export default function Page() {

@@ -12,7 +12,7 @@ import { breadcrumbJsonLd, faqJsonLd } from "@/lib/schema";
 export const metadata: Metadata = {
   title: { absolute: "DIY Plaster Repairs — When to Fix It Yourself | Redfern" },
   description:
-    "Nail holes and hairline cracks you can patch yourself. Ceilings, returning cracks, texture and water damage you can't. An honest guide from a Brisbane plasterer.",
+    "Nail holes and hairline cracks you can patch yourself. Ceilings, returning cracks and water damage you can't. An honest guide from a Brisbane plasterer.",
   alternates: { canonical: "/diy-plaster-repairs" },
   openGraph: { title: "DIY Plaster Repairs: When to Fix It Yourself | Redfern", url: "/diy-plaster-repairs" },
 };

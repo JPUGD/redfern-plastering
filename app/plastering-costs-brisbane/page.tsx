@@ -11,7 +11,7 @@ import { Accordion } from "@/components/accordion";
 import { breadcrumbJsonLd, faqJsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: { absolute: "How Much Does Plastering Cost in Brisbane? 2026 Prices | Redfern" },
+  title: { absolute: "How Much Does Plastering Cost in Brisbane? | Redfern" },
   description:
     "Brisbane plastering prices 2026: wall patches $100–$300, ceiling cut-outs $250–$600, re-sheets $1,600–$2,800. What moves the price, and how to compare quotes.",
   alternates: { canonical: "/plastering-costs-brisbane" },

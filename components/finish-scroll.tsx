@@ -76,7 +76,7 @@ export function FinishScroll() {
           </svg>
         </motion.div>
 
-        {/* crossfading statements */}
+        {/* crossfading statements — both stacked in one cell so they crossfade in place */}
         <div className="relative z-10 px-6 text-center">
           <p className="flex items-center justify-center gap-3 text-[11px] font-semibold uppercase tracking-[0.32em] text-ink/45">
             <span className="h-px w-8 bg-ink/30" aria-hidden />
@@ -84,23 +84,24 @@ export function FinishScroll() {
             <span className="h-px w-8 bg-ink/30" aria-hidden />
           </p>
 
-          <motion.p
-            className="mt-8 font-display text-5xl font-black uppercase leading-[0.95] tracking-tight text-ink sm:text-7xl lg:text-8xl"
-            style={{ opacity: roughOpacity, y: roughY }}
-          >
-            Every wall
-            <br />
-            starts rough.
-          </motion.p>
-
-          <motion.p
-            className="absolute inset-x-6 top-1/2 mt-8 font-display text-5xl font-black uppercase leading-[0.95] tracking-tight text-ink sm:text-7xl lg:text-8xl"
-            style={{ opacity: smoothOpacity, y: smoothY }}
-          >
-            Ours end up
-            <br />
+          <div className="relative mt-8 grid h-[2.7em] place-items-center font-display text-5xl font-black uppercase leading-[0.95] tracking-tight text-ink sm:text-7xl lg:text-8xl">
+            <motion.p
+              className="col-start-1 row-start-1"
+              style={{ opacity: roughOpacity, y: roughY }}
+            >
+              Every wall
+              <br />
+              starts rough.
+            </motion.p>
+            <motion.p
+              className="col-start-1 row-start-1"
+              style={{ opacity: smoothOpacity, y: smoothY }}
+            >
+              Ours end up
+              <br />
               paint-ready.
-          </motion.p>
+            </motion.p>
+          </div>
 
           <p className="mt-10 text-sm font-medium uppercase tracking-[0.22em] text-ink/40">
             Keep scrolling — the wall smooths out

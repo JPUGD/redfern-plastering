@@ -100,7 +100,7 @@ export const SERVICE_PAGES: Record<string, ServicePageContent> = {
     key: "ceiling-repairs",
     name: "Ceiling Repairs",
     h1: "Ceiling repairs — the hardest surface to get right",
-    metaTitle: "Ceiling Repairs Brisbane — Sagging, Cracks & Water Damage | Redfern",
+    metaTitle: "Ceiling Repairs Brisbane — Sagging & Cut-Outs | Redfern",
     metaDescription:
       "Sagging ceilings, access cut-outs, water stains and cracks — reinstated, re-fixed and finished so the repair disappears. Brisbane-wide. Call 0425 743 992.",
     intro:
@@ -203,7 +203,7 @@ export const SERVICE_PAGES: Record<string, ServicePageContent> = {
     key: "water-damage-plaster-repairs",
     name: "Water Damage Plaster Repairs",
     h1: "Water-damaged walls & ceilings, sorted properly",
-    metaTitle: "Water Damage Plaster Repairs Brisbane — Storms & Leaks | Redfern",
+    metaTitle: "Water Damage Plaster Repairs Brisbane | Redfern",
     metaDescription:
       "Storm and leak damage re-lined, sealed and finished — with moisture checked before boards go back. Insurance scopes welcome. Call Redfern on 0425 743 992.",
     intro:
@@ -254,7 +254,7 @@ export const SERVICE_PAGES: Record<string, ServicePageContent> = {
     key: "plasterboard-installation",
     name: "New Plasterboard Installation",
     h1: "New plasterboard, set straight and finished smooth",
-    metaTitle: "Plasterboard Installation Brisbane — Walls & Ceilings | Redfern",
+    metaTitle: "Plasterboard Installation Brisbane | Redfern",
     metaDescription:
       "Extensions, garages, rumpus rooms and conversions — plasterboard set plumb, taped and finished to Level 4 or 5, cornice or square-set. Call 0425 743 992.",
     intro:
@@ -304,7 +304,7 @@ export const SERVICE_PAGES: Record<string, ServicePageContent> = {
     key: "commercial-plastering",
     name: "Commercial Plastering",
     h1: "Commercial repairs & fit-outs, on your schedule",
-    metaTitle: "Commercial Plastering Brisbane — Offices, Retail & Make-Goods | Redfern",
+    metaTitle: "Commercial Plastering Brisbane — Offices & Retail | Redfern",
     metaDescription:
       "Small-to-medium commercial repairs, make-goods and fit-outs across Brisbane — scheduled around your operating hours, minimal disruption. Call 0425 743 992.",
     intro:
@@ -354,7 +354,7 @@ export const SERVICE_PAGES: Record<string, ServicePageContent> = {
     key: "cornice-repairs",
     name: "Cornice Repairs",
     h1: "Cornice repairs — cracks, matching & re-runs",
-    metaTitle: "Cornice Repairs Brisbane — Cracks, Matching & Re-Runs | Redfern",
+    metaTitle: "Cornice Repairs Brisbane — Cracks & Matching | Redfern",
     metaDescription:
       "Cracked cornice re-set and re-run, period pattern matching, cornice for new re-sheets. Brisbane-wide, from single mitres to whole-room runs. Call 0425 743 992.",
     intro:

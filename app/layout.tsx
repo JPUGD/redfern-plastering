@@ -22,7 +22,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Redfern Plastering Solutions | Brisbane Plasterer — Repairs & Renovations",
+    default: "Redfern Plastering Solutions | Brisbane Plasterer",
     template: "%s | Redfern Plastering",
   },
   alternates: { canonical: "/" },

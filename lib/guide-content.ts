@@ -3,7 +3,7 @@ import type { Faq } from "@/lib/data";
 export const DIY_GUIDE = {
   metaTitle: "DIY Plaster Repairs — When to Fix It Yourself | Redfern",
   metaDescription:
-    "Nail holes and hairline cracks you can patch yourself. Ceilings, returning cracks, texture and water damage you can't. An honest guide from a Brisbane plasterer.",
+    "Nail holes and hairline cracks you can patch yourself. Ceilings, returning cracks and water damage you can't. An honest guide from a Brisbane plasterer.",
   h1: "DIY plaster repairs: when to fix it yourself",
   quickAnswer:
     "You can safely DIY: nail holes, picture-hook holes, hairline cracks and holes smaller than a 50c piece on walls at eye level. Call a plasterer for: anything on a ceiling, cracks that keep returning, texture matching, water stains, cornice damage, or holes bigger than your palm.",

@@ -32,6 +32,7 @@ export const metadata: Metadata = {
   keywords: [
     "plasterer Brisbane",
     "plaster repairs Brisbane",
+    "gyprock repairs Brisbane",
     "plastering Brisbane",
     "ceiling repairs Brisbane",
     "plaster patching",

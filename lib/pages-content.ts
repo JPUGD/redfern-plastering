@@ -43,11 +43,11 @@ export const SERVICE_PAGES: Record<string, ServicePageContent> = {
     key: "plaster-repairs",
     name: "Plaster Repairs & Patching",
     h1: "Plaster repairs & patching, done properly",
-    metaTitle: "Plaster Repairs Brisbane — Holes, Cracks & Patching | Redfern",
+    metaTitle: "Plaster & Gyprock Repairs Brisbane | Redfern",
     metaDescription:
-      "Holes, cracks and cut-outs patched, taped and feathered flat — invisible once painted. Small jobs are core work. Call Redfern on 0425 743 992.",
+      "Gyprock and plaster repairs across Brisbane — holes, cracks and cut-outs patched, taped and feathered flat. Same-day photo quotes. Call 0425 743 992.",
     intro:
-      "A door-handle punch, a crack that reopens every winter, the hole your sparky left behind — small repairs are core work for us, not an inconvenience. Patched, taped and feathered flat, then sanded under raking light so the repair disappears.",
+      "A door-handle punch, a crack that reopens every winter, the hole your sparky left behind — small gyprock and plaster repairs are core work for us, not an inconvenience. Patched, taped and feathered flat, then sanded under raking light so the repair disappears.",
     sections: [
       {
         heading: "What we patch",
@@ -83,6 +83,10 @@ export const SERVICE_PAGES: Record<string, ServicePageContent> = {
       {
         q: "How much does it cost to patch a hole in a plaster wall?",
         a: "Small single patches are among our most common jobs, quoted in writing before we start. Photos of the damage from two or three angles will get you a firm price faster than a phone description.",
+      },
+      {
+        q: "Is gyprock the same as plasterboard?",
+        a: "Same thing — Gyprock is CSR's brand name and what most Brisbane tradies call it; plasterboard and drywall are the same product too. Whatever you call the wall, we patch it the same way: cut back to solid board, tape the joint, feather the coats, sand under raking light.",
       },
       {
         q: "Why does the same crack keep coming back?",

@@ -24,7 +24,7 @@ export function FinishScroll() {
   const blurPx = useTransform(scrollYProgress, [0.15, 0.55], [4, 0]);
   const blur = useMotionTemplate`blur(${blurPx}px)`;
 
-  const trowelX = useTransform(scrollYProgress, [0.05, 0.6], ["-12%", "112%"]);
+  const trowelX = useTransform(scrollYProgress, [0.05, 0.6], ["-12vw", "112vw"]);
   const trowelRotate = useTransform(scrollYProgress, [0.05, 0.6], [-6, 8]);
 
   const roughOpacity = useTransform(scrollYProgress, [0.05, 0.35], [1, 0]);

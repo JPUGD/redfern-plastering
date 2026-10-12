@@ -406,6 +406,116 @@ export const SERVICE_PAGES: Record<string, ServicePageContent> = {
       },
     ],
   },
+
+  "insurance-plaster-repairs": {
+    slug: "insurance-plaster-repairs",
+    key: "insurance-plaster-repairs",
+    name: "Insurance Plaster Repairs",
+    h1: "Insurance plaster repairs — scopes assessors accept",
+    metaTitle: "Insurance Plaster Repairs Brisbane | Redfern",
+    metaDescription:
+      "Storm, leak and impact plaster repairs with written scopes, photos and moisture checks — the documentation insurers need. Brisbane-wide. Call 0425 743 992.",
+    intro:
+      "When a storm, a burst pipe or an accident opens up your walls or ceiling, the repair is only half the job. The other half is the paperwork: a written scope, photos of the damage, moisture readings before boards go back, and a finish documented so the assessor can approve it without a second visit. We do both halves.",
+    sections: [
+      {
+        heading: "What we scope and repair",
+        bullets: [
+          "Storm and hail damage — ceilings and walls re-lined after roof leaks",
+          "Burst-pipe and overflow damage — wet board cut out, dried, replaced",
+          "Accidental impact repairs — walls and ceilings made good",
+          "Fire and smoke damage — linings replaced after clean-up crews finish",
+          "Rental and strata make-goods — documented for property managers",
+          "Mould-affected board — removed and replaced once the moisture source is fixed",
+        ],
+      },
+      {
+        heading: "How the insurance process runs",
+        paragraphs: [
+          "You can claim two ways. If your insurer runs their own repair panel, our written scope and photos give you a fair yardstick to measure their quote against — you'll know if their panel is under-scoping the job. If you can choose your own trades, we carry out the repair to the documented scope and your insurer pays per your policy.",
+          "Either way the sequence is the same: photograph everything before anything is touched, moisture-check the cavity before new board goes up (re-boarding a wet cavity guarantees mould and a rejected claim), then repair, document the finish, and hand you the file for the assessor.",
+        ],
+      },
+      {
+        heading: "What your assessor gets",
+        bullets: [
+          "A written scope of works — line by line, in the format insurers expect",
+          "Photos of the damage before the repair and the finish after",
+          "Moisture readings recorded before re-boarding",
+          "A firm written price — not an open-ended estimate",
+        ],
+        note: "Urgent cases first: an exposed ceiling or active water entry gets made safe and dried before the paperwork. We prioritise those.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Do you deal directly with my insurer?",
+        a: "We can. We prepare the scope, photos and moisture documentation to the standard insurers expect, and we can liaise with your assessor directly so you're not managing the back-and-forth. If your insurer insists on their own panel, our scope still gives you a fair yardstick to measure their quote against.",
+      },
+      {
+        q: "Should I lodge a claim before or after the quote?",
+        a: "Either works. Many homeowners find it useful to have a documented scope in hand before lodging — it makes the claim concrete. If you've already lodged, quote us the claim reference and we'll prepare the documentation to match.",
+      },
+      {
+        q: "Can I claim a plaster repair on insurance?",
+        a: "Sudden and accidental damage — storms, burst pipes, impact — is usually covered; gradual wear and maintenance issues usually aren't. Your policy wording decides. Photograph the damage before anything is touched either way, and we'll document the rest.",
+      },
+    ],
+  },
+
+  "sagging-ceiling-repairs": {
+    slug: "sagging-ceiling-repairs",
+    key: "sagging-ceiling-repairs",
+    name: "Sagging Ceiling Repairs",
+    h1: "Sagging ceiling repairs — re-fixed, not patched over",
+    metaTitle: "Sagging Ceiling Repairs Brisbane | Redfern",
+    metaDescription:
+      "Sagging and bulging ceilings re-fixed properly — adhesive re-bonded, sheets re-screwed to battens, checked flat before finishing. Repair first, replace only when needed.",
+    intro:
+      "A sagging ceiling is almost always an adhesive problem, not a board problem — the glue holding the sheet to the battens has let go, and gravity is doing the rest. The right repair re-bonds the sheet to the structure and re-screws it properly, so the ceiling goes flat and stays flat. Patching over a sag is a six-month fix.",
+    sections: [
+      {
+        heading: "Why Brisbane ceilings sag",
+        bullets: [
+          "Ageing adhesive — the most common cause, especially in 1980s–2000s homes",
+          "Roof-space heat cycling — Brisbane summers cook the glue bond year after year",
+          "Water events — a leak adds weight and softens the bond at the same time",
+          "Under-fixing — original sheets fixed too sparsely for their weight",
+          "Termite or batten damage — needs structural attention before any lining work",
+        ],
+      },
+      {
+        heading: "Repair first — replace only when it's earned",
+        paragraphs: [
+          "Most sagging ceilings are repairable. The sheet gets re-bonded with fresh adhesive, re-screwed to the battens at proper centres, and checked flat before any finishing work starts. That saves the ceiling you have instead of paying to replace it.",
+          "But honesty works both ways: a sheet that has delaminated, been wet repeatedly, or sagged past recovery is cheaper to replace than to fight — and a ceiling with batten or termite damage needs the structural issue fixed first. We'll tell you which situation you're in before work starts, not after.",
+        ],
+      },
+      {
+        heading: "Safety while you wait",
+        bullets: [
+          "Keep people and pets out of the room — a saturated sheet is heavy and can drop",
+          "Don't press or poke the sag — you can trigger the failure you're avoiding",
+          "If it's actively leaking, catch the water and get the roof/plumbing seen to first",
+        ],
+        note: "A sag that moves when you open an internal door, or cracks that run along a straight line, needs checking sooner rather than later. Text photos and we'll tell you how urgent it is.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Can a sagging ceiling be repaired without replacing it?",
+        a: "Usually yes. If the board itself is sound, we re-bond it to the battens with fresh adhesive, re-screw at proper centres and check it flat — the ceiling you have is saved. Sheets that are delaminated, repeatedly wet, or sagged past recovery replace cheaper than the fight to save them.",
+      },
+      {
+        q: "Is a sagging ceiling dangerous?",
+        a: "A dry sagging ceiling is usually a slow problem; a saturated or bulging one is a now problem — waterlogged plasterboard is heavy and can drop without warning. Keep people out of the room under a wet sag and get it looked at promptly.",
+      },
+      {
+        q: "Why is my ceiling sagging in the middle but fine at the edges?",
+        a: "Cornices help hold the edges, so failures show mid-sheet where the adhesive bond has let go between battens. That's the classic adhesive-failure pattern — and the most repairable kind. A straight-line sag that tracks one batten points at the structure instead, which we check before quoting.",
+      },
+    ],
+  },
 };
 
 /* ------------------------------------------------------------------ */

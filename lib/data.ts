@@ -200,36 +200,6 @@ export const gallery: GalleryItem[] = [
     tag: "Our work",
     own: true,
   },
-  {
-    src: "/images/stock-drywall-install.jpg",
-    alt: "Plasterer applying compound to a wall during a bathroom renovation",
-    caption: "Renovation lining — compound laid on and worked flat, board by board.",
-    tag: "Renovations",
-  },
-  {
-    src: "/images/stock-trowel-wall.jpg",
-    alt: "Gloved hand plastering a wall smooth with a trowel",
-    caption: "The skim — compound worked to a tight, even finish with the trowel.",
-    tag: "Finishing",
-  },
-  {
-    src: "/images/stock-power-sander.jpg",
-    alt: "Close-up of a wall being power-sanded under bright light",
-    caption: "Machine sanding under raking light — the last pass before primer.",
-    tag: "Finishing",
-  },
-  {
-    src: "/images/stock-stilts-worker.jpg",
-    alt: "Plasterer working on stilts inside a home renovation",
-    caption: "Ceiling lines on stilts — how the big planes get finished clean.",
-    tag: "Renovations",
-  },
-  {
-    src: "/images/stock-trowel-cement.jpg",
-    alt: "Close-up of a trowel loaded with compound",
-    caption: "Loaded and ready — the right amount, every pass.",
-    tag: "Finishing",
-  },
 ];
 
 export type ProcessStep = {

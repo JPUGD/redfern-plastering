@@ -11,9 +11,7 @@ import { SkimPanel } from "@/components/skim-panel";
 import { FinishScroll } from "@/components/finish-scroll";
 import { Accordion } from "@/components/accordion";
 import { LineReveal } from "@/components/line-reveal";
-import { TiltImage } from "@/components/tilt-image";
 import { ParallaxBanner } from "@/components/parallax-banner";
-import { CompareSlider } from "@/components/compare-slider";
 import { ReviewsMarquee } from "@/components/reviews-marquee";
 import { WorkGallery } from "@/components/work-gallery";
 import Link from "next/link";
@@ -188,74 +186,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ---------- CRAFT STRIP (tilt cards + before/after) ---------- */}
-      <section id="craft" className="scroll-mt-24 border-t border-paper/10">
-        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
-          <Reveal>
-            <SectionHeading
-              label="The craft"
-              title="It's all in the finish"
-              intro="Plastering is one of the last trades where the finished job either disappears or shouts at you. We make it disappear."
-            />
-          </Reveal>
-
-          <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-3">
-            <Reveal>
-              <TiltImage
-                src="/images/stock-trowel-wall.jpg"
-                alt="Gloved hand working a wall smooth with a trowel"
-                caption="The skim — compound worked flat and tight with the trowel."
-                tag="Finishing"
-              />
-            </Reveal>
-            <Reveal delay={0.08}>
-              <TiltImage
-                src="/images/stock-trowel-cement.jpg"
-                alt="Close-up of a trowel loaded with compound"
-                caption="Loaded and ready — the right amount on the blade, every pass."
-                tag="Finishing"
-              />
-            </Reveal>
-            <Reveal delay={0.16}>
-              <TiltImage
-                src="/images/stock-power-sander.jpg"
-                alt="Wall being power-sanded under bright light before paint"
-                caption="Machine sanding under raking light — the last pass before primer."
-                tag="Finishing"
-              />
-            </Reveal>
-          </div>
-
-          {/* before/after: drag the trowel */}
-          <Reveal delay={0.1}>
-            <div className="mt-5 grid grid-cols-1 gap-5 lg:grid-cols-[1.6fr_1fr] lg:items-center">
-              <CompareSlider
-                beforeSrc="/images/stock-stucco-texture.jpg"
-                afterSrc="/images/stock-spiral-texture.jpg"
-                beforeAlt="Wall with rough textured stucco before plastering"
-                afterAlt="The same wall finished smooth and ready for paint"
-                className="max-h-[520px] w-full"
-              />
-              <div className="lg:pl-4">
-                <p className="font-display text-2xl font-black uppercase leading-tight tracking-tight text-paper sm:text-3xl">
-                  Drag it.
-                  <br />
-                  Rough in,
-                  <br />
-                  smooth out.
-                </p>
-                <p className="mt-4 text-sm leading-relaxed text-paper/55">
-                  This is the whole job in one gesture — what starts as a
-                  textured, imperfect surface ends flat, tight and invisible
-                  under paint. If the finish doesn't disappear, it isn't
-                  finished.
-                </p>
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
       {/* ---------- WORK ---------- */}
       <section id="work" className="scroll-mt-24 border-t border-paper/10">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
@@ -278,8 +208,8 @@ export default function HomePage() {
 
       {/* ---------- PARALLAX BANNER: WHY REDFERN ---------- */}
       <ParallaxBanner
-        src="/images/stock-drywall-install.jpg"
-        alt="Plasterer applying compound to a wall during a renovation"
+        src="/images/work-vaulted-taping.jpg"
+        alt="Compound coats mid-process on a raked ceiling during a Brisbane renovation"
       />
 
       {/* ---------- REVIEWS ---------- */}

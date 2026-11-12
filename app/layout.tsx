@@ -9,6 +9,7 @@ import { GrainOverlay } from "@/components/grain-overlay";
 import { FloatingCall } from "@/components/floating-call";
 import { MotionProvider } from "@/components/motion-provider";
 import { Analytics } from "@vercel/analytics/react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const archivo = Archivo({
   subsets: ["latin"],
@@ -101,6 +102,8 @@ const jsonLd = {
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const gaId = process.env.NEXT_PUBLIC_GA_ID?.trim();
+
   return (
     <html lang="en-AU" className={`${archivo.variable} ${inter.variable}`}>
       <body>
@@ -117,6 +120,7 @@ export default function RootLayout({
           <Footer />
         </MotionProvider>
         <Analytics />
+        {gaId ? <GoogleAnalytics gaId={gaId} /> : null}
       </body>
     </html>
   );

@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@eslint/eslintrc": "^3.3.7",
+    "@next/third-parties": "^15.5.27",
     "@tailwindcss/postcss": "^4.3.3",
     "@types/node": "^26.6.4",
     "@types/react": "^19.3.0",

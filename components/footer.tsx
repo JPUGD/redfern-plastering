@@ -93,9 +93,14 @@ export function Footer() {
           <p>
             © {year} {site.name}
           </p>
-          <p>
-            {site.city} {site.state} · {site.country}
-          </p>
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-6">
+            <Link href="/privacy" className="transition-colors hover:text-paper">
+              Privacy
+            </Link>
+            <p>
+              {site.city} {site.state} · {site.country}
+            </p>
+          </div>
         </div>
       </div>
     </footer>

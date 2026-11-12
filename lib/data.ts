@@ -124,7 +124,7 @@ export const faqs: Faq[] = [
   },
   {
     q: "What areas do you cover?",
-    a: "We're Brisbane-based and work across the greater Brisbane region. If you're nearby and not sure, just ask.",
+    a: "We're Brisbane-based and work across greater Brisbane, Logan, Ipswich and the Redlands, including the southside, northside, east and bayside. If you're nearby and not sure, just ask.",
   },
   {
     q: "Will there be much mess?",

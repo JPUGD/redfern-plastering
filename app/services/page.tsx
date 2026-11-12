@@ -9,7 +9,7 @@ import { breadcrumbJsonLd } from "@/lib/schema";
 export const metadata: Metadata = {
   title: { absolute: "Plastering Services Brisbane | Redfern" },
   description:
-    "All aspects of plastering across Brisbane: repairs, ceilings, renovations, water damage, cornice and commercial. Prices on every page. Call 0425 743 992.",
+    "All aspects of plastering across Brisbane: repairs, ceilings, renovations, water damage, cornice and commercial. Quoted in writing. Call 0425 743 992.",
   alternates: { canonical: "/services" },
   openGraph: {
     title: "Plastering Services Brisbane | Redfern",
@@ -51,7 +51,7 @@ export default function ServicesIndex() {
                   {s.metaDescription.split(".")[0]}.
                 </p>
                 <p className="mt-5 pt-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-paper/40 transition-colors group-hover:text-paper/70">
-                  Detail & pricing →
+                  Detail & FAQs →
                 </p>
               </Link>
             </Reveal>

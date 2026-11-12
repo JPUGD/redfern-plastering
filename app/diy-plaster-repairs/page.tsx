@@ -196,6 +196,12 @@ export default function DiyGuidePage() {
         <Reveal delay={0.06}>
           <div className="mt-6 flex flex-wrap gap-2.5">
             <Link
+              href="/guides/plaster-cracks-queensland"
+              className="rounded-full border border-paper/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-paper/70 transition-colors hover:border-paper/50 hover:text-paper"
+            >
+              Cracks: cosmetic or worth a look
+            </Link>
+            <Link
               href="/services/plaster-repairs"
               className="rounded-full border border-paper/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-paper/70 transition-colors hover:border-paper/50 hover:text-paper"
             >

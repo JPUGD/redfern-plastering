@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getGuides, formatGuideDate } from "@/lib/guides";
 import { breadcrumbJsonLd } from "@/lib/schema";
 import { site } from "@/lib/site";
+import { ContactSection } from "@/components/contact-section";
 
 export const metadata: Metadata = {
   title: { absolute: "Plastering Guides | Redfern" },
@@ -140,6 +141,7 @@ export default function GuidesPage() {
           ))}
         </div>
       </section>
+      <ContactSection />
     </>
   );
 }

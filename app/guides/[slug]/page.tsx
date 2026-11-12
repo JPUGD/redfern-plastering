@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { guideMdxComponents } from "@/components/guide-mdx";
 import { CtaButton } from "@/components/cta-button";
+import { ContactSection } from "@/components/contact-section";
 import { formatGuideDate, getGuide, getGuides } from "@/lib/guides";
 import { articleJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 import { site } from "@/lib/site";
@@ -109,8 +110,12 @@ export default async function GuidePage({ params }: Props) {
           <CtaButton href={site.smsHref} external variant="beam">
             Text photos for a quote
           </CtaButton>
+          <CtaButton href="#contact" variant="beam">
+            Get a quote
+          </CtaButton>
         </div>
       </article>
+      <ContactSection />
     </>
   );
 }

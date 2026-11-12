@@ -13,6 +13,7 @@ import { Accordion } from "@/components/accordion";
 import { ParallaxBanner } from "@/components/parallax-banner";
 import { ReviewsMarquee } from "@/components/reviews-marquee";
 import { WorkGallery } from "@/components/work-gallery";
+import { ContactSection } from "@/components/contact-section";
 import Link from "next/link";
 
 const SERVICE_PAGE_MAP: Record<string, string> = {
@@ -324,59 +325,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ---------- CONTACT ---------- */}
-      <section id="contact" className="scroll-mt-24">
-        <div className="mx-auto max-w-7xl px-6 pb-28 lg:px-8">
-          <Reveal>
-            <div className="beam-border relative overflow-hidden rounded-3xl bg-coal">
-              <div
-                aria-hidden
-                className="pointer-events-none absolute inset-0 [background-image:linear-gradient(rgba(246,245,241,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(246,245,241,0.03)_1px,transparent_1px)] [background-size:48px_48px]"
-              />
-              <div className="relative grid gap-10 p-10 sm:p-14 lg:grid-cols-[1.3fr_1fr] lg:items-center">
-                <div>
-                  <p className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.32em] text-paper/50">
-                    <span className="h-px w-8 bg-paper/30" aria-hidden />
-                    Get a quote
-                  </p>
-                  <h2 className="mt-5 font-display text-4xl font-black uppercase leading-[0.95] tracking-tight text-paper sm:text-6xl">
-                    Got a wall
-                    <br />
-                    that needs
-                    <br />
-                    sorting?
-                  </h2>
-                  <p className="mt-6 max-w-md text-base leading-relaxed text-paper/60">
-                    Call or text any time — photos of the damage help us scope
-                    it and price it faster. Friendly service from start to
-                    finish.
-                  </p>
-                </div>
-                <div className="flex flex-col gap-4 lg:items-end">
-                  <Magnetic>
-                    <CtaButton href={site.phoneHref} external>
-                      Call {site.phoneDisplay}
-                    </CtaButton>
-                  </Magnetic>
-                  <Magnetic strength={0.2}>
-                    <CtaButton href={site.smsHref} external variant="beam">
-                      Send a text
-                    </CtaButton>
-                  </Magnetic>
-                  <Magnetic strength={0.2}>
-                    <CtaButton href={site.whatsappHref} external variant="beam">
-                      WhatsApp us
-                    </CtaButton>
-                  </Magnetic>
-                  <p className="text-[11px] uppercase tracking-[0.24em] text-paper/35">
-                    Brisbane based · ABN {site.abn}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
+      <ContactSection />
     </>
   );
 }

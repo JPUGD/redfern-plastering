@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SERVICE_PAGES } from "@/lib/pages-content";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
+import { ContactSection } from "@/components/contact-section";
 import { breadcrumbJsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -57,6 +58,7 @@ export default function ServicesIndex() {
           ))}
         </div>
       </section>
+      <ContactSection />
     </>
   );
 }

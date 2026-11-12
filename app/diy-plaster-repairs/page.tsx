@@ -7,6 +7,7 @@ import { Magnetic } from "@/components/magnetic";
 import { CtaButton } from "@/components/cta-button";
 import { SectionHeading } from "@/components/section-heading";
 import { Accordion } from "@/components/accordion";
+import { ContactSection } from "@/components/contact-section";
 import { breadcrumbJsonLd, faqJsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -101,13 +102,16 @@ export default function DiyGuidePage() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-6 border-t border-paper/10 pt-5">
+              <div className="mt-6 flex flex-col items-start gap-4 border-t border-paper/10 pt-5">
                 <Magnetic strength={0.2}>
                   <CtaButton href={site.smsHref} external variant="beam">
                     Text a photo — we&rsquo;ll tell you straight
                   </CtaButton>
                 </Magnetic>
-              </p>
+                <CtaButton href="#contact" variant="beam">
+                  Get a quote
+                </CtaButton>
+              </div>
             </div>
           </Reveal>
         </div>
@@ -206,6 +210,7 @@ export default function DiyGuidePage() {
           </div>
         </Reveal>
       </section>
+      <ContactSection />
     </>
   );
 }

@@ -120,7 +120,7 @@ export const faqs: Faq[] = [
   },
   {
     q: "How do I get a quote?",
-    a: "Call or text 0425 743 992. Photos of the damage or the room help us scope the job faster and give you a clearer price sooner.",
+    a: "Use the quote form, or call or text 0425 743 992. Photos of the damage or the room help us scope the job faster and give you a clearer price sooner.",
   },
   {
     q: "What areas do you cover?",

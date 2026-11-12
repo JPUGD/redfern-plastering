@@ -156,7 +156,7 @@ export const SERVICE_PAGES: Record<string, ServicePageContent> = {
     key: "renovation-plastering",
     name: "Renovation Plastering",
     h1: "Renovation plastering — rooms brought back to square",
-    metaTitle: "Renovation Plastering Brisbane — Full Rooms & Homes | Redfern",
+    metaTitle: "Renovation Plastering, Brisbane | Redfern",
     metaDescription:
       "Full-room re-sheets, kitchen and bathroom strip-outs, square-set or cornice finishes — reno plastering that works in with your trades. Call 0425 743 992.",
     intro:
@@ -470,7 +470,7 @@ export const SERVICE_PAGES: Record<string, ServicePageContent> = {
     h1: "Sagging ceiling repairs — re-fixed, not patched over",
     metaTitle: "Sagging Ceiling Repairs Brisbane | Redfern",
     metaDescription:
-      "Sagging and bulging ceilings re-fixed properly — adhesive re-bonded, sheets re-screwed to battens, checked flat before finishing. Repair first, replace only when needed.",
+      "Sagging and bulging ceilings re-fixed properly — sheets re-bonded and re-screwed, then checked flat. Repair first, replace only when needed.",
     intro:
       "A sagging ceiling is almost always an adhesive problem, not a board problem — the glue holding the sheet to the battens has let go, and gravity is doing the rest. The right repair re-bonds the sheet to the structure and re-screws it properly, so the ceiling goes flat and stays flat. Patching over a sag is a six-month fix.",
     sections: [

@@ -55,16 +55,12 @@ export function AreaPage({ page }: { page: AreaPageContent }) {
                 Brisbane plasterer · Local pages
               </p>
             </Reveal>
-            <Reveal delay={0.06}>
-              <h1 className="mt-6 font-display text-4xl font-black uppercase leading-[0.95] tracking-tight text-paper sm:text-6xl">
-                {page.h1}
-              </h1>
-            </Reveal>
-            <Reveal delay={0.12}>
-              <p className="mt-8 max-w-xl text-base leading-relaxed text-paper/65 sm:text-lg">
-                {page.intro}
-              </p>
-            </Reveal>
+            <h1 className="mt-6 font-display text-4xl font-black uppercase leading-[0.95] tracking-tight text-paper sm:text-6xl">
+              {page.h1}
+            </h1>
+            <p className="mt-8 max-w-xl text-base leading-relaxed text-paper/65 sm:text-lg">
+              {page.intro}
+            </p>
             <Reveal delay={0.18}>
               <div className="mt-10 flex flex-wrap items-center gap-5">
                 <Magnetic>

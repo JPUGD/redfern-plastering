@@ -10,7 +10,6 @@ import { ServiceIcon } from "@/components/icon";
 import { SkimPanel } from "@/components/skim-panel";
 import { FinishScroll } from "@/components/finish-scroll";
 import { Accordion } from "@/components/accordion";
-import { LineReveal } from "@/components/line-reveal";
 import { ParallaxBanner } from "@/components/parallax-banner";
 import { ReviewsMarquee } from "@/components/reviews-marquee";
 import { WorkGallery } from "@/components/work-gallery";
@@ -52,24 +51,19 @@ export default function HomePage() {
                 </p>
               </Reveal>
 
-              <LineReveal
-                className="mt-6 font-display text-[13.5vw] font-black uppercase leading-[0.88] tracking-tight text-paper sm:text-7xl lg:text-[5.6rem]"
-                lines={[
-                  "Every",
-                  "surface",
-                  <span key="f" className="text-paper/35">finished</span>,
-                  "properly.",
-                ]}
-              />
+              <h1 className="mt-6 font-display text-[13.5vw] font-black uppercase leading-[0.88] tracking-tight text-paper sm:text-7xl lg:text-[5.6rem]">
+                <span className="block pb-[0.08em]">Every</span>
+                <span className="block pb-[0.08em]">surface</span>
+                <span className="block pb-[0.08em] text-paper/35">finished</span>
+                <span className="block pb-[0.08em]">properly.</span>
+              </h1>
 
-              <Reveal delay={0.16}>
-                <p className="mt-8 max-w-md text-base leading-relaxed text-paper/60 sm:text-lg">
-                  {site.scope} — repairs, patching, renovations and small to
-                  medium residential &amp; commercial projects across{" "}
-                  {site.city}. Craftsmanship, reliability and a seamless finish,
-                  every job.
-                </p>
-              </Reveal>
+              <p className="mt-8 max-w-md text-base leading-relaxed text-paper/60 sm:text-lg">
+                {site.scope} — repairs, patching, renovations and small to
+                medium residential &amp; commercial projects across{" "}
+                {site.city}. Craftsmanship, reliability and a seamless finish,
+                every job.
+              </p>
 
               <Reveal delay={0.24}>
                 <div className="mt-10 flex flex-wrap items-center gap-5">

@@ -6,11 +6,14 @@ import { SectionHeading } from "@/components/section-heading";
 import { breadcrumbJsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: { absolute: "Plastering Services Brisbane — Repairs & Renovations | Redfern" },
+  title: { absolute: "Plastering Services Brisbane | Redfern" },
   description:
     "All aspects of plastering across Brisbane: repairs, ceilings, renovations, water damage, cornice and commercial. Prices on every page. Call 0425 743 992.",
   alternates: { canonical: "/services" },
-  openGraph: { title: "Plastering Services Brisbane | Redfern", url: "/services" },
+  openGraph: {
+    title: "Plastering Services Brisbane | Redfern",
+    url: "/services",
+  },
 };
 
 const jsonLd = breadcrumbJsonLd([
@@ -27,14 +30,12 @@ export default function ServicesIndex() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <section className="mx-auto max-w-7xl px-6 pb-16 pt-36 lg:px-8">
-        <Reveal>
-          <SectionHeading
-            as="h1"
-            label="What we do"
-            title="Plastering services"
-            intro="All aspects of plastering — residential and commercial, repairs through renovations. Click through for detail, FAQs and how pricing works on each."
-          />
-        </Reveal>
+        <SectionHeading
+          as="h1"
+          label="What we do"
+          title="Plastering services"
+          intro="All aspects of plastering — residential and commercial, repairs through renovations. Click through for detail, FAQs and how pricing works on each."
+        />
         <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s, i) => (
             <Reveal key={s.slug} delay={0.05 * i}>

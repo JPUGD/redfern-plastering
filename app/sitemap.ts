@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
 import { SERVICE_PAGES, AREA_PAGES } from "@/lib/pages-content";
+import { getGuides } from "@/lib/guides";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -41,6 +42,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,
+    });
+  }
+
+  routes.push({
+    url: `${site.url}/guides`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  for (const guide of getGuides()) {
+    routes.push({
+      url: `${site.url}/guides/${guide.slug}`,
+      lastModified: new Date(`${guide.date}T00:00:00.000Z`),
+      changeFrequency: "yearly",
+      priority: 0.6,
     });
   }
 

@@ -1,7 +1,11 @@
 export const site = {
   name: "Redfern Plastering Solutions",
   shortName: "Redfern",
-  url: "https://redfern-plastering.vercel.app",
+  url: "https://www.redfernplasteringsolutions.com.au",
+  postalCode: "4173",
+  /** Google Maps place, confirmed against the live Business Profile. */
+  googleProfile:
+    "https://www.google.com/maps/search/?api=1&query=Redfern%20Plastering%20Solutions&query_place_id=ChIJMUIyk4RzIWURp6vUs3dVw_A",
   phoneDisplay: "0425 743 992",
   phoneHref: "tel:+61425743992",
   smsHref: "sms:+61425743992",

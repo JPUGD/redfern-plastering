@@ -34,6 +34,7 @@ export function serviceJsonLd(opts: {
         "@type": "PostalAddress",
         addressLocality: site.city,
         addressRegion: site.state,
+        postalCode: site.postalCode,
         addressCountry: site.country,
       },
       areaServed: ["Brisbane", "Logan", "Ipswich", "Redlands"],
@@ -59,5 +60,31 @@ export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
       name: it.name,
       item: `${site.url}${it.path}`,
     })),
+  };
+}
+
+export function articleJsonLd(opts: {
+  title: string;
+  description: string;
+  path: string;
+  datePublished: string;
+}) {
+  const url = `${site.url}${opts.path}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: opts.title,
+    description: opts.description,
+    datePublished: opts.datePublished,
+    dateModified: opts.datePublished,
+    mainEntityOfPage: url,
+    url,
+    author: {
+      "@type": "Organization",
+      "@id": `${site.url}/#business`,
+      name: site.name,
+      url: site.url,
+    },
+    publisher: { "@id": `${site.url}/#business` },
   };
 }

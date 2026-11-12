@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Archivo, Inter } from "next/font/google";
 import "./globals.css";
 import { site } from "@/lib/site";
-import { reviews } from "@/lib/data";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { ScrollProgress } from "@/components/scroll-progress";
@@ -70,16 +69,20 @@ const jsonLd = {
   description: site.description,
   telephone: "+61 425 743 992",
   url: site.url,
+  sameAs: [site.googleProfile],
   address: {
     "@type": "PostalAddress",
     addressLocality: site.city,
     addressRegion: site.state,
+    postalCode: site.postalCode,
     addressCountry: site.country,
   },
-  areaServed: {
-    "@type": "City",
-    name: "Brisbane",
-  },
+  areaServed: [
+    { "@type": "City", name: "Brisbane" },
+    { "@type": "City", name: "Logan" },
+    { "@type": "City", name: "Ipswich" },
+    { "@type": "City", name: "Redlands" },
+  ],
   knowsAbout: [
     "plaster repairs",
     "patching",
@@ -93,19 +96,6 @@ const jsonLd = {
     name: "ABN",
     value: site.abn,
   },
-  ...(reviews.length > 0
-    ? {
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: (
-            reviews.reduce((a, r) => a + r.rating, 0) / reviews.length
-          ).toFixed(1),
-          reviewCount: reviews.length,
-          bestRating: 5,
-          worstRating: 1,
-        },
-      }
-    : {}),
 };
 
 export default function RootLayout({

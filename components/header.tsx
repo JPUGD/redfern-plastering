@@ -10,6 +10,7 @@ const links = [
   { href: "/services", label: "Services" },
   { href: "/#work", label: "Work" },
   { href: "/plastering-costs-brisbane", label: "Costs" },
+  { href: "/guides", label: "Guides" },
   { href: "/#faq", label: "FAQ" },
   { href: "/#contact", label: "Contact" },
 ];

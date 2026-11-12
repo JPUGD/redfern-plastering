@@ -63,25 +63,20 @@ export default function CostGuidePage() {
             Brisbane · How we price
           </p>
         </Reveal>
-        <Reveal delay={0.06}>
-          <h1 className="mt-6 max-w-4xl font-display text-4xl font-black uppercase leading-[0.95] tracking-tight text-paper sm:text-6xl">
-            How much does plastering cost in Brisbane?
-          </h1>
-        </Reveal>
-        {/* AEO direct-answer block */}
-        <Reveal delay={0.12}>
-          <p className="mt-8 max-w-3xl text-base leading-relaxed text-paper/65 sm:text-lg">
-            There&rsquo;s no single plastering rate — a fair quote reflects the
-            job, not a flat hourly number. What moves it: <strong>job size</strong>{" "}
-            (a door-handle punch and a full re-sheet are different animals),{" "}
-            <strong>coats</strong> (three is the trade standard for a finish that
-            lasts), <strong>ceiling height and access</strong>,{" "}
-            <strong>texture matching</strong>, and whether the surface ends{" "}
-            <strong>paint-ready</strong>. Every job gets a firm written quote
-            before work starts — text photos of the damage and you&rsquo;ll have
-            a price the same day.
-          </p>
-        </Reveal>
+        <h1 className="mt-6 max-w-4xl font-display text-4xl font-black uppercase leading-[0.95] tracking-tight text-paper sm:text-6xl">
+          How much does plastering cost in Brisbane?
+        </h1>
+        <p className="mt-8 max-w-3xl text-base leading-relaxed text-paper/65 sm:text-lg">
+          There&rsquo;s no single plastering rate — a fair quote reflects the
+          job, not a flat hourly number. What moves it: <strong>job size</strong>{" "}
+          (a door-handle punch and a full re-sheet are different animals),{" "}
+          <strong>coats</strong> (three is the trade standard for a finish that
+          lasts), <strong>ceiling height and access</strong>,{" "}
+          <strong>texture matching</strong>, and whether the surface ends{" "}
+          <strong>paint-ready</strong>. Every job gets a firm written quote
+          before work starts — text photos of the damage and you&rsquo;ll have
+          a price the same day.
+        </p>
         <Reveal delay={0.18}>
           <div className="mt-10 flex flex-wrap items-center gap-5">
             <Magnetic>

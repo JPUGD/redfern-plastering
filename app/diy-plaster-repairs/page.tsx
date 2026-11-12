@@ -58,16 +58,12 @@ export default function DiyGuidePage() {
             An honest guide
           </p>
         </Reveal>
-        <Reveal delay={0.06}>
-          <h1 className="mt-6 max-w-4xl font-display text-4xl font-black uppercase leading-[0.95] tracking-tight text-paper sm:text-6xl">
-            {DIY_GUIDE.h1}
-          </h1>
-        </Reveal>
-        <Reveal delay={0.12}>
-          <p className="mt-8 max-w-3xl text-base leading-relaxed text-paper/65 sm:text-lg">
-            {DIY_GUIDE.quickAnswer}
-          </p>
-        </Reveal>
+        <h1 className="mt-6 max-w-4xl font-display text-4xl font-black uppercase leading-[0.95] tracking-tight text-paper sm:text-6xl">
+          {DIY_GUIDE.h1}
+        </h1>
+        <p className="mt-8 max-w-3xl text-base leading-relaxed text-paper/65 sm:text-lg">
+          {DIY_GUIDE.quickAnswer}
+        </p>
       </section>
 
       {/* OK vs not OK */}

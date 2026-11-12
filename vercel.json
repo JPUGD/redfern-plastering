@@ -1,0 +1,19 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "redfern-plastering.vercel.app" }],
+      "destination": "https://www.redfernplasteringsolutions.com.au/$1",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "redfernplasteringsolutions.com.au" }],
+      "destination": "https://www.redfernplasteringsolutions.com.au/$1",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    }
+  ]
+}

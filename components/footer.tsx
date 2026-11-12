@@ -59,6 +59,14 @@ export function Footer() {
                   Brisbane cost guide
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/guides"
+                  className="text-sm text-paper/60 transition-colors hover:text-paper"
+                >
+                  Plastering guides
+                </Link>
+              </li>
             </ul>
           </nav>
 

@@ -8,12 +8,12 @@ import { ContactSection } from "@/components/contact-section";
 export const metadata: Metadata = {
   title: { absolute: "Plastering Guides | Redfern" },
   description:
-    "Practical notes on plaster repairs around Brisbane — leaks, ceilings, and what to check before anyone patches.",
+    "Practical notes on plaster repairs around Brisbane — cracks, leaks, ceilings, and what to check before anyone patches.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "Plastering Guides | Redfern",
     description:
-      "Practical notes on plaster repairs around Brisbane — leaks, ceilings, and what to check before anyone patches.",
+      "Practical notes on plaster repairs around Brisbane — cracks, leaks, ceilings, and what to check before anyone patches.",
     url: "/guides",
   },
 };
@@ -95,9 +95,9 @@ export default function GuidesPage() {
           Plastering guides
         </h1>
         <p className="mt-8 max-w-3xl text-base leading-relaxed text-paper/65 sm:text-lg">
-          Straight answers on plaster repairs around Brisbane — what to check
-          after a leak, what you can patch yourself, and what a fair quote is
-          actually based on.
+          Straight answers on plaster repairs around Brisbane — which cracks
+          are cosmetic, what to check after a leak, what you can patch
+          yourself, and what a fair quote is actually based on.
         </p>
 
         <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2">

@@ -10,6 +10,18 @@ import { Accordion } from "@/components/accordion";
 import { ContactSection } from "@/components/contact-section";
 import { breadcrumbJsonLd, faqJsonLd, serviceJsonLd } from "@/lib/schema";
 
+const CRACK_GUIDE = {
+  href: "/guides/plaster-cracks-queensland",
+  title: "Plaster cracks guide",
+  text: "Which wall and ceiling cracks are cosmetic, and which are worth a look before you fill them.",
+};
+
+const CRACK_GUIDE_SLUGS = new Set([
+  "plaster-repairs",
+  "ceiling-repairs",
+  "cornice-repairs",
+]);
+
 function JsonLd({ data }: { data: object }) {
   return (
     <script
@@ -227,6 +239,19 @@ export function ServicePage({ page }: { page: ServicePageContent }) {
                 </p>
               </Link>
             ))}
+            {CRACK_GUIDE_SLUGS.has(page.slug) && (
+              <Link
+                href={CRACK_GUIDE.href}
+                className="group rounded-2xl border border-paper/10 bg-coal/50 p-5 transition-colors hover:border-paper/30"
+              >
+                <p className="font-display text-sm font-bold uppercase tracking-[0.12em] text-paper/85 transition-colors group-hover:text-paper">
+                  {CRACK_GUIDE.title}
+                </p>
+                <p className="mt-2 text-xs leading-relaxed text-paper/45">
+                  {CRACK_GUIDE.text}
+                </p>
+              </Link>
+            )}
             <Link
               href="/diy-plaster-repairs"
               className="group rounded-2xl border border-paper/10 bg-coal/50 p-5 transition-colors hover:border-paper/30"

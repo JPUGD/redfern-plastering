@@ -542,7 +542,6 @@ export const AREA_PAGES: Record<string, AreaPageContent> = {
       "Wishart",
       "Runcorn",
       "Macgregor",
-      "Hollands Park",
     ],
     commonJobs: [
       "Hallway ceiling cracks that reopen every dry winter — taped, not just filled",

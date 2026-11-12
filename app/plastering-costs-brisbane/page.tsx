@@ -9,6 +9,7 @@ import { CtaButton } from "@/components/cta-button";
 import { SectionHeading } from "@/components/section-heading";
 import { Accordion } from "@/components/accordion";
 import { TiltImage } from "@/components/tilt-image";
+import { ContactSection } from "@/components/contact-section";
 import { breadcrumbJsonLd, faqJsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -82,6 +83,11 @@ export default function CostGuidePage() {
             <Magnetic>
               <CtaButton href={site.smsHref} external>
                 Text photos for a firm price
+              </CtaButton>
+            </Magnetic>
+            <Magnetic strength={0.2}>
+              <CtaButton href="#contact" variant="beam">
+                Get a quote
               </CtaButton>
             </Magnetic>
           </div>
@@ -232,6 +238,7 @@ export default function CostGuidePage() {
           </div>
         </Reveal>
       </section>
+      <ContactSection />
     </>
   );
 }

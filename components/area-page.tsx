@@ -5,6 +5,7 @@ import { SERVICE_PAGES, AREA_PAGES } from "@/lib/pages-content";
 import { Reveal } from "@/components/reveal";
 import { Magnetic } from "@/components/magnetic";
 import { CtaButton } from "@/components/cta-button";
+import { ContactSection } from "@/components/contact-section";
 import { breadcrumbJsonLd } from "@/lib/schema";
 
 function JsonLd({ data }: { data: object }) {
@@ -71,6 +72,11 @@ export function AreaPage({ page }: { page: AreaPageContent }) {
                 <Magnetic strength={0.2}>
                   <CtaButton href={site.smsHref} external variant="beam">
                     Text photos for a price
+                  </CtaButton>
+                </Magnetic>
+                <Magnetic strength={0.2}>
+                  <CtaButton href="#contact" variant="beam">
+                    Get a quote
                   </CtaButton>
                 </Magnetic>
               </div>
@@ -193,6 +199,8 @@ export function AreaPage({ page }: { page: AreaPageContent }) {
           </div>
         </Reveal>
       </section>
+
+      <ContactSection />
     </>
   );
 }

@@ -46,6 +46,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   routes.push({
+    url: `${site.url}/privacy`,
+    lastModified: new Date("2026-11-12T00:00:00.000Z"),
+    changeFrequency: "yearly",
+    priority: 0.3,
+  });
+
+  routes.push({
     url: `${site.url}/guides`,
     lastModified: now,
     changeFrequency: "monthly",

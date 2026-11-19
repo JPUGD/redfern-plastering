@@ -226,6 +226,12 @@ export default function CostGuidePage() {
             >
               DIY guide
             </Link>
+            <Link
+              href="/guides"
+              className="rounded-full border border-paper/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-paper/70 transition-colors hover:border-paper/50 hover:text-paper"
+            >
+              Plastering guides
+            </Link>
             {areas.map((a) => (
               <Link
                 key={a.slug}

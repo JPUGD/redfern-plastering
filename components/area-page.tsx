@@ -146,6 +146,30 @@ export function AreaPage({ page }: { page: AreaPageContent }) {
                 </Link>
                 .
               </p>
+              <p className="mt-4 text-sm leading-relaxed text-paper/60">
+                Still working out what you are looking at? The notes on{" "}
+                <Link
+                  href="/guides/nail-and-screw-pops"
+                  className="underline decoration-paper/40 underline-offset-4 transition-colors hover:text-paper"
+                >
+                  nail and screw pops
+                </Link>
+                ,{" "}
+                <Link
+                  href="/guides/plaster-cracks-queensland"
+                  className="underline decoration-paper/40 underline-offset-4 transition-colors hover:text-paper"
+                >
+                  cracks
+                </Link>{" "}
+                and{" "}
+                <Link
+                  href="/guides/after-a-leak-plaster-checks"
+                  className="underline decoration-paper/40 underline-offset-4 transition-colors hover:text-paper"
+                >
+                  after a leak
+                </Link>{" "}
+                walk through it before anyone fills over the damage.
+              </p>
             </div>
           </Reveal>
         </div>

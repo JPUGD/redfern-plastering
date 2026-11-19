@@ -13,6 +13,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "/services" },
   openGraph: {
     title: "Plastering Services Brisbane | Redfern",
+    description:
+      "All aspects of plastering across Brisbane: repairs, ceilings, renovations, water damage, cornice and commercial. Quoted in writing. Call 0425 743 992.",
     url: "/services",
   },
 };
@@ -57,6 +59,17 @@ export default function ServicesIndex() {
             </Reveal>
           ))}
         </div>
+        <p className="mt-10 max-w-3xl text-sm leading-relaxed text-paper/55">
+          Not sure which job it is? The{" "}
+          <Link
+            href="/guides"
+            className="underline decoration-paper/40 underline-offset-4 transition-colors hover:text-paper"
+          >
+            plastering guides
+          </Link>{" "}
+          cover nail and screw pops, cracks that come back, and what to check
+          after a leak.
+        </p>
       </section>
       <ContactSection />
     </>

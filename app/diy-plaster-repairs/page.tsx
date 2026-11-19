@@ -15,7 +15,12 @@ export const metadata: Metadata = {
   description:
     "Nail holes and hairline cracks you can patch yourself. Ceilings, returning cracks and water damage you can't. An honest guide from a Brisbane plasterer.",
   alternates: { canonical: "/diy-plaster-repairs" },
-  openGraph: { title: "DIY Plaster Repairs: When to Fix It Yourself | Redfern", url: "/diy-plaster-repairs" },
+  openGraph: {
+    title: "DIY Plaster Repairs — When to Fix It Yourself | Redfern",
+    description:
+      "Nail holes and hairline cracks you can patch yourself. Ceilings, returning cracks and water damage you can't. An honest guide from a Brisbane plasterer.",
+    url: "/diy-plaster-repairs",
+  },
 };
 
 const jsonLds = [
@@ -196,10 +201,22 @@ export default function DiyGuidePage() {
         <Reveal delay={0.06}>
           <div className="mt-6 flex flex-wrap gap-2.5">
             <Link
+              href="/guides/nail-and-screw-pops"
+              className="rounded-full border border-paper/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-paper/70 transition-colors hover:border-paper/50 hover:text-paper"
+            >
+              Nail and screw pops
+            </Link>
+            <Link
               href="/guides/plaster-cracks-queensland"
               className="rounded-full border border-paper/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-paper/70 transition-colors hover:border-paper/50 hover:text-paper"
             >
               Cracks: cosmetic or worth a look
+            </Link>
+            <Link
+              href="/guides/after-a-leak-plaster-checks"
+              className="rounded-full border border-paper/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-paper/70 transition-colors hover:border-paper/50 hover:text-paper"
+            >
+              After a leak
             </Link>
             <Link
               href="/services/plaster-repairs"

@@ -40,6 +40,8 @@ export default async function GuidePage({ params }: Props) {
   const guide = getGuide(slug);
   if (!guide) notFound();
 
+  const moreGuides = getGuides().filter((item) => item.slug !== guide.slug);
+
   const jsonLd = [
     breadcrumbJsonLd([
       { name: "Home", path: "/" },
@@ -102,6 +104,40 @@ export default async function GuidePage({ params }: Props) {
         <div className="mt-2">
           <MDXRemote source={guide.content} components={guideMdxComponents} />
         </div>
+
+        <nav aria-label="More guides" className="mt-14 border-t border-paper/10 pt-10">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-paper/40">
+            More guides
+          </p>
+          <ul className="mt-4 space-y-3">
+            {moreGuides.map((item) => (
+              <li key={item.slug}>
+                <Link
+                  href={`/guides/${item.slug}`}
+                  className="text-base text-paper/70 underline decoration-paper/40 underline-offset-4 transition-colors hover:text-paper"
+                >
+                  {item.title}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <Link
+                href="/diy-plaster-repairs"
+                className="text-base text-paper/70 underline decoration-paper/40 underline-offset-4 transition-colors hover:text-paper"
+              >
+                DIY plaster repairs: when to fix it yourself
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/plastering-costs-brisbane"
+                className="text-base text-paper/70 underline decoration-paper/40 underline-offset-4 transition-colors hover:text-paper"
+              >
+                How much plastering costs in Brisbane
+              </Link>
+            </li>
+          </ul>
+        </nav>
 
         <div className="mt-14 flex flex-wrap items-center gap-5 border-t border-paper/10 pt-10">
           <CtaButton href={site.phoneHref} external>

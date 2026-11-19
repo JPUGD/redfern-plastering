@@ -47,7 +47,6 @@ export const metadata: Metadata = {
     description: site.seoDescription,
     url: site.url,
   },
-  robots: { index: true, follow: true },
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,

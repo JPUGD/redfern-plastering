@@ -14,6 +14,7 @@ import { ParallaxBanner } from "@/components/parallax-banner";
 import { ReviewsMarquee } from "@/components/reviews-marquee";
 import { WorkGallery } from "@/components/work-gallery";
 import { ContactSection } from "@/components/contact-section";
+import { faqJsonLd } from "@/lib/schema";
 import Link from "next/link";
 
 const SERVICE_PAGE_MAP: Record<string, string> = {
@@ -25,9 +26,16 @@ const SERVICE_PAGE_MAP: Record<string, string> = {
   commercial: "/services/commercial-plastering",
 };
 
+const guideLinkClass =
+  "underline decoration-paper/40 underline-offset-4 transition-colors hover:text-paper";
+
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faqs)) }}
+      />
       {/* ---------- HERO ---------- */}
       <section id="top" className="relative overflow-hidden">
         {/* backdrop: giant outline word + grid */}
@@ -177,6 +185,23 @@ export default function HomePage() {
                 </Link>
               ))}
             </div>
+          </Reveal>
+          <Reveal delay={0.12}>
+            <p className="mt-8 max-w-3xl text-sm leading-relaxed text-paper/55">
+              Practical notes before you call:{" "}
+              <Link href="/guides/nail-and-screw-pops" className={guideLinkClass}>
+                nail and screw pops
+              </Link>
+              ,{" "}
+              <Link href="/guides/plaster-cracks-queensland" className={guideLinkClass}>
+                cracks that come back
+              </Link>
+              , and{" "}
+              <Link href="/guides/after-a-leak-plaster-checks" className={guideLinkClass}>
+                what to check after a leak
+              </Link>
+              .
+            </p>
           </Reveal>
         </div>
       </section>

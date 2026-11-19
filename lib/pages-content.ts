@@ -156,7 +156,7 @@ export const SERVICE_PAGES: Record<string, ServicePageContent> = {
     key: "renovation-plastering",
     name: "Renovation Plastering",
     h1: "Renovation plastering — rooms brought back to square",
-    metaTitle: "Renovation Plastering, Brisbane | Redfern",
+    metaTitle: "Renovation Plastering Brisbane | Redfern",
     metaDescription:
       "Full-room re-sheets, kitchen and bathroom strip-outs, square-set or cornice finishes — reno plastering that works in with your trades. Call 0425 743 992.",
     intro:

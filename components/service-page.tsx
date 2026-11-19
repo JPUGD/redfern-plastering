@@ -10,17 +10,32 @@ import { Accordion } from "@/components/accordion";
 import { ContactSection } from "@/components/contact-section";
 import { breadcrumbJsonLd, faqJsonLd, serviceJsonLd } from "@/lib/schema";
 
+const POPS_GUIDE = {
+  href: "/guides/nail-and-screw-pops",
+  title: "Nail and screw pops",
+  text: "Why a filled dimple comes back, and when a run of pops means the sheet has let go.",
+};
+
 const CRACK_GUIDE = {
   href: "/guides/plaster-cracks-queensland",
   title: "Plaster cracks guide",
   text: "Which wall and ceiling cracks are cosmetic, and which are worth a look before you fill them.",
 };
 
-const CRACK_GUIDE_SLUGS = new Set([
-  "plaster-repairs",
-  "ceiling-repairs",
-  "cornice-repairs",
-]);
+const LEAK_GUIDE = {
+  href: "/guides/after-a-leak-plaster-checks",
+  title: "After a leak",
+  text: "What to check before anyone patches: stains, soft sheets, and ceilings that need re-fixing.",
+};
+
+const RELATED_GUIDES: Record<string, { href: string; title: string; text: string }[]> = {
+  "plaster-repairs": [POPS_GUIDE, CRACK_GUIDE],
+  "ceiling-repairs": [POPS_GUIDE, CRACK_GUIDE, LEAK_GUIDE],
+  "cornice-repairs": [CRACK_GUIDE],
+  "sagging-ceiling-repairs": [POPS_GUIDE, LEAK_GUIDE],
+  "water-damage-plaster-repairs": [LEAK_GUIDE],
+  "insurance-plaster-repairs": [LEAK_GUIDE],
+};
 
 function JsonLd({ data }: { data: object }) {
   return (
@@ -118,9 +133,18 @@ export function ServicePage({ page }: { page: ServicePageContent }) {
               <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-paper/50">
                 Quick answer
               </p>
-              <p className="mt-4 text-sm leading-relaxed text-paper/75">
-                {page.intro}
-              </p>
+              {page.faqs[0] ? (
+                <>
+                  <p className="mt-4 text-sm font-semibold leading-relaxed text-paper">
+                    {page.faqs[0].q}
+                  </p>
+                  <p className="mt-3 text-sm leading-relaxed text-paper/75">
+                    {page.faqs[0].a}
+                  </p>
+                </>
+              ) : (
+                <p className="mt-4 text-sm leading-relaxed text-paper/75">{page.intro}</p>
+              )}
               <p className="mt-5 border-t border-paper/10 pt-5 text-xs leading-relaxed text-paper/50">
                 Serving Brisbane, Logan, Ipswich and the Redlands — see{" "}
                 <Link
@@ -239,19 +263,20 @@ export function ServicePage({ page }: { page: ServicePageContent }) {
                 </p>
               </Link>
             ))}
-            {CRACK_GUIDE_SLUGS.has(page.slug) && (
+            {(RELATED_GUIDES[page.slug] ?? []).map((guide) => (
               <Link
-                href={CRACK_GUIDE.href}
+                key={guide.href}
+                href={guide.href}
                 className="group rounded-2xl border border-paper/10 bg-coal/50 p-5 transition-colors hover:border-paper/30"
               >
                 <p className="font-display text-sm font-bold uppercase tracking-[0.12em] text-paper/85 transition-colors group-hover:text-paper">
-                  {CRACK_GUIDE.title}
+                  {guide.title}
                 </p>
                 <p className="mt-2 text-xs leading-relaxed text-paper/45">
-                  {CRACK_GUIDE.text}
+                  {guide.text}
                 </p>
               </Link>
-            )}
+            ))}
             <Link
               href="/diy-plaster-repairs"
               className="group rounded-2xl border border-paper/10 bg-coal/50 p-5 transition-colors hover:border-paper/30"

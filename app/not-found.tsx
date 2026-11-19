@@ -1,5 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { LogoMark } from "@/components/logo";
+
+export const metadata: Metadata = {
+  title: { absolute: "Page not found | Redfern Plastering" },
+  description:
+    "That address is not a page on the Redfern Plastering Solutions site.",
+  robots: { index: false, follow: true },
+  alternates: { canonical: null },
+};
 
 export default function NotFound() {
   return (
@@ -24,6 +33,12 @@ export default function NotFound() {
           className="rounded-full border border-paper/25 px-7 py-3 font-display text-xs font-bold uppercase tracking-[0.16em] text-paper transition-colors hover:border-paper/60"
         >
           Browse services
+        </Link>
+        <Link
+          href="/guides"
+          className="rounded-full border border-paper/25 px-7 py-3 font-display text-xs font-bold uppercase tracking-[0.16em] text-paper transition-colors hover:border-paper/60"
+        >
+          Plastering guides
         </Link>
       </div>
     </section>

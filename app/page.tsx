@@ -200,6 +200,10 @@ export default function HomePage() {
               <Link href="/guides/after-a-leak-plaster-checks" className={guideLinkClass}>
                 what to check after a leak
               </Link>
+              , and{" "}
+              <Link href="/guides/hanging-things-on-plasterboard" className={guideLinkClass}>
+                hanging things on plasterboard
+              </Link>
               .
             </p>
           </Reveal>

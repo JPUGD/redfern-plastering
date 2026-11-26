@@ -219,6 +219,12 @@ export default function DiyGuidePage() {
               After a leak
             </Link>
             <Link
+              href="/guides/hanging-things-on-plasterboard"
+              className="rounded-full border border-paper/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-paper/70 transition-colors hover:border-paper/50 hover:text-paper"
+            >
+              Hanging things on plasterboard
+            </Link>
+            <Link
               href="/services/plaster-repairs"
               className="rounded-full border border-paper/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-paper/70 transition-colors hover:border-paper/50 hover:text-paper"
             >

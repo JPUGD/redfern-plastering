@@ -8,7 +8,11 @@ export const metadata: Metadata = {
   title: { absolute: page.metaTitle },
   description: page.metaDescription,
   alternates: { canonical: `/${page.slug}` },
-  openGraph: { title: page.metaTitle, url: `/${page.slug}` },
+  openGraph: {
+    title: page.metaTitle,
+    description: page.metaDescription,
+    url: `/${page.slug}`,
+  },
 };
 
 export default function Page() {

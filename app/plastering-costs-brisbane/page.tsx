@@ -17,7 +17,12 @@ export const metadata: Metadata = {
   description:
     "What shapes a Brisbane plastering quote: job size, coats, ceiling height, access, texture matching. How we price, and how to compare quotes properly.",
   alternates: { canonical: "/plastering-costs-brisbane" },
-  openGraph: { title: "How Much Does Plastering Cost in Brisbane? | Redfern", url: "/plastering-costs-brisbane" },
+  openGraph: {
+    title: "How Much Does Plastering Cost in Brisbane? | Redfern",
+    description:
+      "What shapes a Brisbane plastering quote: job size, coats, ceiling height, access, texture matching. How we price, and how to compare quotes properly.",
+    url: "/plastering-costs-brisbane",
+  },
 };
 
 const jsonLds = [

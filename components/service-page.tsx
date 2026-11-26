@@ -28,8 +28,15 @@ const LEAK_GUIDE = {
   text: "What to check before anyone patches: stains, soft sheets, and ceilings that need re-fixing.",
 };
 
+const HANGING_GUIDE = {
+  href: "/guides/hanging-things-on-plasterboard",
+  title: "Hanging things on plasterboard",
+  text: "Why a hollow knock means no timber, and when a torn fixing hole needs backing.",
+};
+
 const RELATED_GUIDES: Record<string, { href: string; title: string; text: string }[]> = {
-  "plaster-repairs": [POPS_GUIDE, CRACK_GUIDE],
+  "plaster-repairs": [POPS_GUIDE, CRACK_GUIDE, HANGING_GUIDE],
+  "plasterboard-installation": [HANGING_GUIDE],
   "ceiling-repairs": [POPS_GUIDE, CRACK_GUIDE, LEAK_GUIDE],
   "cornice-repairs": [CRACK_GUIDE],
   "sagging-ceiling-repairs": [POPS_GUIDE, LEAK_GUIDE],
